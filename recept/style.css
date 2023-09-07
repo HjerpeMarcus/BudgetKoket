@@ -1,3 +1,9 @@
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .rubrik1 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -50,7 +56,7 @@ img {
 
 .btn {
   display: inline-block;
-  background-color: #E194A6;
+  background-color: #ba3e5b;
   color: white;
   font-weight: 500;
   padding: 0.7rem 2rem;
@@ -58,11 +64,11 @@ img {
   border: none;
 }
 .btn.btn-submit {
-  background-color: rgb(154, 0, 0);
+  background-color: rgb(208, 64, 64);
 }
 
 .quote {
-  background-color: rgb(154, 0, 0);
+  background-color: rgb(208, 64, 64);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -107,9 +113,9 @@ img {
   width: 100%;
 }
 #search-bar #header-search.focus-border {
-  border: 1px solid #E194A6;
+  border: 1px solid #ba3e5b;
   outline: none;
-  box-shadow: 0px 0px 20px #E194A6;
+  box-shadow: 0px 0px 20px #ba3e5b;
 }
 #search-bar #btn-search {
   position: absolute;
@@ -153,7 +159,7 @@ img {
 
 .chip + label {
   display: inline-block;
-  background-color: #E194A6;
+  background-color: #ba3e5b;
   border-radius: 5rem;
   padding: 0.5rem 1.5rem;
   margin-bottom: 0.4rem;
@@ -168,7 +174,7 @@ img {
   display: none;
 }
 .chip[type=checkbox]:checked + label {
-  background-color: rgb(154, 0, 0);
+  background-color: rgb(208, 64, 64);
 }
 
 .popular {
@@ -293,7 +299,6 @@ img {
   flex-wrap: nowrap;
 }
 #hero .overlay {
-  filter: blur(4px);
   position: absolute;
   z-index: 2;
   top: 0;
@@ -301,8 +306,6 @@ img {
   right: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-  -webkit-backdrop-filter: blur(6px);
-          backdrop-filter: blur(6px);
 }
 
 .video-header {
@@ -330,7 +333,7 @@ img {
 }
 
 #main-footer {
-  background-color: #E194A6;
+  background-color: #ba3e5b;
   padding: 2rem 0;
   color: white;
 }

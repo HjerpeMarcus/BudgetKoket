@@ -1,5 +1,11 @@
-$p-800:rgb(154, 0, 0);
-$p-900:#E194A6;
+$p-800:rgb(208, 64, 64);
+$p-900:#ba3e5b;
+
+*,html{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 .rubrik1{
     font-size: 3rem;
@@ -287,7 +293,6 @@ img{
     @include flexbox(column, center, center,nowrap);
   }
   .overlay{
-        filter: blur(4px);
         position: absolute;
         z-index: 2;
         top: 0;
@@ -295,7 +300,6 @@ img{
         right: 0;
         left: 0;
         background: rgba(0, 0, 0, 0.4);
-        backdrop-filter: blur(6px);
   }
 }
   .video-header {
