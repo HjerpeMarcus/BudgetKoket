@@ -6,7 +6,9 @@ $p-900:#ba3e5b;
     padding:0;
     box-sizing:border-box;
 }
-
+body{
+    font-family: 'Satoshi', sans-serif;
+}
 .rubrik1{
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -27,13 +29,6 @@ $p-900:#ba3e5b;
 
 h3{
     font-size: 1.5rem;
-}
-p{
-    line-height: 1.45;
-    margin-bottom: 1rem;
-    body{
-        font-family: 'Satoshi', sans-serif;
-    }
 }
 @mixin flexbox($direction, $justify-content, $align-items , $wrap) {
     display: flex;
@@ -68,6 +63,9 @@ img{
     &.btn-submit{
         background-color: $p-800;
     }
+}
+.rubrik1-p{
+    margin-bottom:1rem;
 }
 
 .quote{

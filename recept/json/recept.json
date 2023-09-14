@@ -83,7 +83,7 @@
         ],
         "html": "recept/paella.html",
         "time": "40 min",
-        "imageURL": "../img/paella.jpg"
+        "imageURL": "img/paella.jpg"
     },
     {
         "id": 2,
@@ -130,7 +130,7 @@
             0
         ],
         "html": "recept/spaghetti_bolognese.html",
-        "imageURL": "../img/bolognese.jpg"
+        "imageURL": "img/bolognese.jpg"
     },
     {
         "id": 3,
@@ -179,7 +179,7 @@
             0
         ],
         "html": "chicken_stir_fry.html",
-        "imageURL": "../img/BlueberryOatmealBars.jpg"
+        "imageURL": "img/BlueberryOatmealBars.jpg"
     },
     {
         "id": 4,
@@ -226,7 +226,7 @@
             0
         ],
         "html": "vegetable_curry.html",
-        "imageURL": "../img/linssoppa.jpg"
+        "imageURL": "img/linssoppa.jpg"
     },
     {
         "id": 5,
@@ -273,7 +273,7 @@
             0
         ],
         "html": "salmon_lemon_dill.html",
-        "imageURL": "../img/lax.jpg"
+        "imageURL": "img/lax.jpg"
     },
     {
         "id": 6,
@@ -320,7 +320,7 @@
             0
         ],
         "html": "margherita_pizza.html",
-        "imageURL": "../img/pizza.jpg"
+        "imageURL": "img/pizza.jpg"
     },
     {
         "id": 7,
@@ -365,7 +365,7 @@
             0
         ],
         "html": "berry_smoothie.html",
-        "imageURL": "../img/sparris.jpg"
+        "imageURL": "img/sparris.jpg"
     },
     {
         "id": 8,
@@ -412,7 +412,7 @@
             0
         ],
         "html": "homemade_burgers.html",
-        "imageURL": "../img/caesarsalad.jpg"
+        "imageURL": "img/caesarsalad.jpg"
     },
     {
         "id": 9,
@@ -459,7 +459,7 @@
             0
         ],
         "html": "pasta_primavera.html",
-        "imageURL": "../img/PastaPrimavera.jpg"
+        "imageURL": "img/PastaPrimavera.jpg"
     },
     {
         "id": 10,
@@ -512,7 +512,7 @@
             0
         ],
         "html": "chocolate_chip_cookies.html",
-        "imageURL": "../img/havre.jpg"
+        "imageURL": "img/havre.jpg"
     }
     
 

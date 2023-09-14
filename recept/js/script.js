@@ -1,11 +1,11 @@
-const jsonUrl = '../json/recept.json';
+const jsonUrl = 'json/recept.json';
 const dataUserTemplate = document.querySelector('[data-user-template]');
 const dataUserCards = document.querySelector('[data-user-cards]');
 const dataUserPopuar = document.querySelectorAll('[data-user-popular]');
 const searchInput = document.querySelector('[data-search]');
 
 let recipes = []; 
-
+console.log("Hej hej")
 if(searchInput){
     // Fokus-lyssnare på input med id searchInput
     searchInput.addEventListener('focus', () => {

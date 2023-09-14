@@ -2,7 +2,7 @@ const getID = document.querySelector('.recept');
 
 //Detta script hämtar och spottar ut data till ett enkillt recept
 
-fetch('../json/chatRecept.json')
+fetch('../json/recept.json')
     .then(response => response.json())
     .then(data => {
     data.forEach(item => {
