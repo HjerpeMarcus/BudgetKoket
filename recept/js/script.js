@@ -37,11 +37,11 @@ function getCard (){
         const card = dataUserTemplate.content.cloneNode(true).children[0];
         const header = card.querySelector('[data-header]');
         const img = card.querySelector('[data-image]');
-        const cat = card.querySelector('[data-cat]');
+        const desc = card.querySelector('[data-desc]');
         const link = card.querySelector('[data-link]');
         link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
-        cat.textContent = recipe.category;
+        desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
         dataUserCards.append(card);
         return{name: recipe.name,category: recipe.category, element:card}
@@ -64,12 +64,12 @@ fetch(jsonUrl)
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
-                const cat = card.querySelector('[data-cat]');
+                const desc = card.querySelector('[data-desc]');
                 const link = card.querySelector('[data-link]');
                 link.setAttribute('href', recipe.html);
                 header.textContent = recipe.name;
-                cat.textContent = recipe.category;
                 img.setAttribute('src', recipe.imageURL);
+                desc.textContent = recipe.description;
                 section.append(card);
                 return{name: recipe.name,category: recipe.category, element:card}
             });
@@ -104,3 +104,40 @@ if(allChips){
         });
       });
 }
+//scroll-animationer
+function wait(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+const imageObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            wait(500).then(() =>
+                entry.target.classList.add('animation')
+            )
+      }
+    })
+  });
+  const bubbleObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            wait(1000).then(() =>
+                entry.target.parentElement.classList.add('animation')
+            )
+      }
+    })
+  });
+  imageObserver.observe(document.querySelector('.banana'));
+  bubbleObserver.observe(document.querySelector('.bubbleChecker1'));
+  bubbleObserver.observe(document.querySelector('.bubbleChecker2'));
+  imageObserver.observe(document.querySelector('.cherry'));
+  //header-knappar
+const menuButtonRef = document.querySelector('#mobile-headerMenu');
+const searchButtonRef = document.querySelector('#mobile-searchIcon');
+const closeButtonRef = document.querySelector('.closeIcon')
+const navRef = document.querySelector('.mobile-nav')
+menuButtonRef.addEventListener("click", function(){
+    navRef.classList.add('visible')
+})
+closeButtonRef.addEventListener("click", function(){
+    navRef.classList.remove('visible')
+})
