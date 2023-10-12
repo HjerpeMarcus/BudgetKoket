@@ -130,14 +130,25 @@ const imageObserver = new IntersectionObserver(entries => {
   bubbleObserver.observe(document.querySelector('.bubbleChecker1'));
   bubbleObserver.observe(document.querySelector('.bubbleChecker2'));
   imageObserver.observe(document.querySelector('.cherry'));
-  //header-knappar
+//header-knappar
 const menuButtonRef = document.querySelector('#mobile-headerMenu');
 const searchButtonRef = document.querySelector('#mobile-searchIcon');
-const closeButtonRef = document.querySelector('.closeIcon')
-const navRef = document.querySelector('.mobile-nav')
+const closeButtonRef = document.querySelector('.closeIcon');
+const searchRef = document.querySelector('.mobile-search');
+const searchCloseRef = document.querySelector('.closeSearch');
+const navRef = document.querySelector('.mobile-nav');
+const shadowRef = document.querySelector('.search-shadow');
 menuButtonRef.addEventListener("click", function(){
     navRef.classList.add('visible')
-})
+});
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
-})
+});
+searchButtonRef.addEventListener("click", function(){
+    searchRef.classList.add('visible')
+    shadowRef.classList.add('visible')
+});
+searchCloseRef.addEventListener("click", function(){
+    searchRef.classList.remove('visible')
+    shadowRef.classList.remove('visible')
+});
