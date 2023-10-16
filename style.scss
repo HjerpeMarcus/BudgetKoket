@@ -8,10 +8,13 @@ $p-900:#ba3e5b;
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color:#FDF9DA;
 }
 .mid-rubrik1{
-    font-size: 2rem;
-    margin-bottom:1.5rem;
+    color:#4C560F;
+    font-size:1.5rem;
+    font-family: 'Bungee Inline', sans-serif;
+    font-weight:300;
 }
 h3{
     font-size: 1.5rem;
@@ -135,46 +138,64 @@ img{
         }
     }
 }
-.card{
-    position: relative;
-    margin-bottom: 2rem;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    border: solid 2px black;
-    box-shadow: black 3px 3px;
-    overflow: hidden;
-    .imageContainer{
-        height:200px;
-        img{
-            height:100%;
-            object-fit: cover;
-        }
-    }
-    .cardHeader{
-        font-size:1rem;
-        font-weight:bold;
-        margin: 0.5rem 0 0.5rem 0;
-    }
-    .cardDesc{
-        margin-bottom:1rem;
-    }
-    .cardLink{
-        padding:0.5rem 0.6rem 0.5rem 0.6rem;
+.popular-cards{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    .card{
+        position: relative;
+        height:540px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        flex: 0 0 98%;
+        margin-bottom: 2rem;
+        border-radius: 1.5rem;
+        padding: 1.5rem;
         border: solid 2px black;
-        border-radius:0.8rem;
-        display:inline-flex;
-        align-items:center;
-        text-decoration:none;
-        color:black;
-        .linkText{
-            margin-right:0.5rem;
+        box-shadow: black 3px 3px;
+        overflow: hidden;
+        background-color:white;
+        @media(min-width:700px){
+            flex: 0 0 48%;
         }
-    }
-    &.hide{
-        display: none;
-    }
-    &:last-child{
-        margin-bottom:0;
+        @media(min-width:1000px){
+            flex: 0 0 30%;
+        }
+        .imageContainer{
+            height:200px;
+            img{
+                height:100%;
+                object-fit: cover;
+            }
+        }
+        .cardHeader{
+            font-size:1rem;
+            font-weight:bold;
+            margin: 0.5rem 0 0.5rem 0;
+        }
+        .cardDesc{
+            margin-bottom:1rem;
+        }
+        .cardLink{
+            padding:0.5rem 0.6rem 0.5rem 0.6rem;
+            border: solid 2px black;
+            border-radius:0.8rem;
+            display:inline-flex;
+            align-items:center;
+            width:fit-content;
+            text-decoration:none;
+            color:black;
+            .linkText{
+                margin-right:0.5rem;
+            }
+        }
+        &.hide{
+            display: none;
+        }
+        &:last-child{
+            margin-bottom:0;
+        }
     }
 }
 .main-header{
@@ -272,9 +293,9 @@ img{
         }
     }
     .logo{
-        background-color:black;
-        height:25px;
         flex: 0 0 56%;
+        text-align:center;
+        font-size:1.5rem;
     }
 }
 @mixin coverer {
@@ -286,10 +307,42 @@ img{
 }
 #hero{
     position: relative;
-    color: white;
     height: 100vh;
     width:100vw;
-    background-color:grey;
+    background-image: url(/img/hero_mobile.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    @media(min-width:700px){
+        background-image: url(/img/hero.jpg);
+    }
+    .text{
+        padding-top:10rem;
+        padding-left:2rem;
+        p{
+            margin-top:1rem;
+            padding: 0 0.5rem 0 0.5rem;
+            font-size:4rem;
+            font-family: 'Bungee Inline', sans-serif;
+            font-weight:300;
+            color:#4C560F;
+            display:inline-block;
+            line-height:5rem;
+            vertical-align:center;
+            background-color: #F6F634;
+        }
+    }
+    .heroButton{
+        margin-top:4rem;
+        display:inline-block;
+        background-color:#E95E3F;
+        border:solid 2px black;
+        box-shadow: black 3px 3px;
+        padding:0.7rem 2.5rem;
+        border-radius:24px;
+        font-size:1.5rem;
+        font-weight:600;
+        color:white;
+    }
 }
   .textField{
     padding: .6rem 1rem;
@@ -310,10 +363,6 @@ img{
     background-color:#6ECCE0;
     position:relative;
     overflow:hidden;
-    .mid-rubrik1{
-        color:white;
-        text-align:center;
-    }
     .tipsImage{
         height:50vw;
         width:50vw;
