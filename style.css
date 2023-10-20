@@ -546,7 +546,17 @@ img {
   justify-content: center;
 }
 
-.aboutUsTextContainer .aboutUsTextBox .aboutUsText {
+#aboutUsTextConatiner {
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+#aboutUsTextConatiner .aboutUsTextBox {
+  flex: 0 0 80%;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

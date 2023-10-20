@@ -522,11 +522,19 @@ img {
   }
 }
 
-.aboutUsTextContainer {
+#aboutUsTextConatiner {
+  display: flex;
+  justify-content: center;
   .aboutUsTextBox {
+    flex: 0 0 80%;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: solid 2px black;
+    box-shadow: black 3px 3px;
+    overflow: hidden;
+    background-color: white;
     .aboutUsText {
-      display: flex;
-      align-items: center;
     }
   }
 }
