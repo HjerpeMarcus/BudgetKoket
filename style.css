@@ -544,4 +544,9 @@ img {
 #headerText .siteHeading {
   display: flex;
   justify-content: center;
+}
+
+.aboutUsTextContainer .aboutUsTextBox {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
