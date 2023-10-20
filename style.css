@@ -546,7 +546,7 @@ img {
   justify-content: center;
 }
 
-.aboutUsTextContainer .aboutUsTextBox {
+.aboutUsTextContainer .aboutUsTextBox .aboutUsText {
   display: flex;
   align-items: center;
 }/*# sourceMappingURL=style.css.map */
