@@ -538,3 +538,24 @@ img {
     }
   }
 }
+
+.teamContainer {
+  background-color: #a1aed1;
+  h3 {
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .teamPic {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    .personPic {
+      margin-top: 2rem;
+      border-radius: 8px;
+      border-right: 6px solid #fdf9da;
+      border-bottom: 6px solid #fdf9da;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
