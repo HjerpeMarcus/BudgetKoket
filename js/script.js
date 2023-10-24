@@ -38,8 +38,6 @@ function getCard (){
         const header = card.querySelector('[data-header]');
         const img = card.querySelector('[data-image]');
         const desc = card.querySelector('[data-desc]');
-        const link = card.querySelector('[data-link]');
-        link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
         desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
@@ -65,8 +63,7 @@ fetch(jsonUrl)
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
                 const desc = card.querySelector('[data-desc]');
-                const link = card.querySelector('[data-link]');
-                link.setAttribute('href', recipe.html);
+                card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
                 desc.textContent = recipe.description;
@@ -152,3 +149,11 @@ searchCloseRef.addEventListener("click", function(){
     searchRef.classList.remove('visible')
     shadowRef.classList.remove('visible')
 });
+//kort-länkar
+document.body.addEventListener( 'click', function ( event ) {
+    if(event.target.classList.contains('linkListener')){
+            let chosenRecipe = event.target.closest(".card").id;
+            sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
+            console.log(`${chosenRecipe}`);
+    };
+  } );
