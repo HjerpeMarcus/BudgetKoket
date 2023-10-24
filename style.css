@@ -543,7 +543,8 @@ img {
 }
 
 #headerText {
-  background-color: #6ecce0;
+  color: #4c560f;
+  background-color: #fdf9da;
   padding: 2rem;
   font-family: "Bungee Inline", sans-serif;
 }
