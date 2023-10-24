@@ -556,8 +556,11 @@ img {
   justify-content: center;
 }
 
+#aboutUsTextConatiner {
+  width: 80%;
+  margin: auto;
+}
 #aboutUsTextConatiner .aboutUsTextBox {
-  flex: 0 0 80%;
   border-radius: 1.5rem;
   padding: 1.5rem;
   margin: 1rem 0;

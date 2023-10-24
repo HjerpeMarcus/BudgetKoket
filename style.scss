@@ -532,8 +532,12 @@ img {
 }
 
 #aboutUsTextConatiner {
+  width: 80%;
+  margin: auto;
+  @media (min-width: 1000px) {
+    // width: 70%;
+  }
   .aboutUsTextBox {
-    flex: 0 0 80%;
     border-radius: 1.5rem;
     padding: 1.5rem;
     margin: 1rem 0;
@@ -542,6 +546,7 @@ img {
     overflow: hidden;
     background-color: white;
     .aboutUsText {
+
     }
   }
 }
