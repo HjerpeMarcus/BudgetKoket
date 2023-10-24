@@ -152,8 +152,6 @@ searchCloseRef.addEventListener("click", function(){
 //kort-länkar
 document.body.addEventListener( 'click', function ( event ) {
     if(event.target.classList.contains('linkListener')){
-            let chosenRecipe = event.target.closest(".card").id;
             sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
-            console.log(`${chosenRecipe}`);
     };
   } );
