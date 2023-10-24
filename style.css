@@ -343,17 +343,21 @@ img {
   padding-top: 10rem;
   padding-left: 2rem;
 }
-#hero .text p {
-  margin-top: 1rem;
-  padding: 0 0.5rem 0 0.5rem;
+#hero .text div {
+  background-color: #F6F634;
+  display: inline-block;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+#hero .text div p {
   font-size: 4rem;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 300;
   color: #4C560F;
   display: inline-block;
-  line-height: 5rem;
-  vertical-align: center;
-  background-color: #F6F634;
+  line-height: 4rem;
+  padding: 1rem;
+  white-space: nowrap;
 }
 #hero .heroButton {
   margin-top: 4rem;

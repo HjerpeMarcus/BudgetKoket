@@ -321,17 +321,21 @@ img{
     .text{
         padding-top:10rem;
         padding-left:2rem;
-        p{
-            margin-top:1rem;
-            padding: 0 0.5rem 0 0.5rem;
-            font-size:4rem;
-            font-family: 'Bungee Inline', sans-serif;
-            font-weight:300;
-            color:#4C560F;
+        div{
+            background-color:#F6F634;
             display:inline-block;
-            line-height:5rem;
-            vertical-align:center;
-            background-color: #F6F634;
+            margin-bottom:1rem;
+            overflow:hidden;
+            p{
+                font-size:4rem;
+                font-family: 'Bungee Inline', sans-serif;
+                font-weight:300;
+                color:#4C560F;
+                display:inline-block;
+                line-height:4rem;
+                padding:1rem;
+                white-space: nowrap;
+            }
         }
     }
     .heroButton{
