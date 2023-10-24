@@ -1,4 +1,5 @@
-*, html {
+*,
+html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,7 +7,16 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #FDF9DA;
+  background-color: #fdf9da;
+}
+
+.omOssBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.omOssBody #main-footer {
+  margin-top: auto;
 }
 
 .icon {
@@ -14,7 +24,7 @@ body {
 }
 
 .mid-rubrik1 {
-  color: #4C560F;
+  color: #4c560f;
   font-size: 1.5rem;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 300;
@@ -353,7 +363,7 @@ img {
   font-size: 4rem;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 300;
-  color: #4C560F;
+  color: #4c560f;
   display: inline-block;
   line-height: 4rem;
   padding: 1rem;
@@ -362,7 +372,7 @@ img {
 #hero .heroButton {
   margin-top: 4rem;
   display: inline-block;
-  background-color: #E95E3F;
+  background-color: #e95e3f;
   border: solid 2px black;
   box-shadow: black 3px 3px;
   padding: 0.7rem 2.5rem;
@@ -379,7 +389,7 @@ img {
 }
 
 #main-footer {
-  background-color: #7EFD9A;
+  background-color: #fdf26d;
   padding: 1.5rem 1rem 2rem 1rem;
   color: white;
 }
@@ -390,7 +400,7 @@ img {
 .tips {
   width: 100vw;
   height: 100vh;
-  background-color: #6ECCE0;
+  background-color: #6ecce0;
   position: relative;
   overflow: hidden;
 }
@@ -538,4 +548,66 @@ img {
   100% {
     transform: translate(-1400px);
   }
+}
+
+#headerText {
+  color: #4c560f;
+  background-color: #fdf9da;
+  padding: 2rem;
+  font-family: "Bungee Inline", sans-serif;
+}
+#headerText .emptyBox {
+  height: 51px;
+}
+#headerText .siteHeading {
+  display: flex;
+  justify-content: center;
+}
+
+#aboutUsTextConatiner {
+  width: 80%;
+  margin: auto;
+}
+#aboutUsTextConatiner .aboutUsTextBox {
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+  background-color: white;
+}
+.teamContainer {
+  background-color: #a1aed1;
+}
+.teamContainer h3 {
+  text-align: center;
+  padding-top: 2rem;
+}
+.teamContainer .teamPic {
+  padding: 1rem 0;
+  margin: 0 1rem;
+}
+@media (min-width: 1000px) {
+  .teamContainer .teamPic {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.teamContainer .teamPic .personPic {
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .teamContainer .teamPic .personPic {
+    flex: 0 0 30%;
+  }
+}
+.teamContainer .teamPic .personPic img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
