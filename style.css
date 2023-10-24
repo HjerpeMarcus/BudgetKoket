@@ -10,6 +10,15 @@ body {
   background-color: #fdf9da;
 }
 
+.omOssBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.omOssBody #main-footer {
+  margin-top: auto;
+}
+
 .mid-rubrik1 {
   color: #4c560f;
   font-size: 1.5rem;
@@ -372,7 +381,7 @@ img {
 }
 
 #main-footer {
-  background-color: #7efd9a;
+  background-color: #fdf26d;
   padding: 1.5rem 1rem 2rem 1rem;
   color: white;
 }
@@ -546,10 +555,6 @@ img {
   justify-content: center;
 }
 
-#aboutUsTextConatiner {
-  display: flex;
-  justify-content: center;
-}
 #aboutUsTextConatiner .aboutUsTextBox {
   flex: 0 0 80%;
   border-radius: 1.5rem;
@@ -571,11 +576,25 @@ img {
   padding: 1rem 0;
   margin: 0 1rem;
 }
+@media (min-width: 1000px) {
+  .teamContainer .teamPic {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .teamContainer .teamPic .personPic {
   margin-top: 2rem;
-  border-radius: 8px;
-  border-right: 6px solid #fdf9da;
-  border-bottom: 6px solid #fdf9da;
+  border-radius: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+}
+@media (min-width: 1000px) {
+  .teamContainer .teamPic .personPic {
+    flex: 0 0 30%;
+  }
 }
 .teamContainer .teamPic .personPic img {
   width: 100%;
