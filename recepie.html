@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="dv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>untitle</title>
+    <link rel="preload" as="video" fetchpriority="high" href="movie/pasta.mp4">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-header">
+        <div class="container">
+            <a class="logo" href="index.html">Recept</a>
+            <nav class="main-nav">
+                <ul class="main-menu">
+                    <li class="main-menu-item">
+                        <a class="link" href="recepie.html">Recept</a>
+                    </li>
+                    <li class="main-menu-item">
+                        <a class="link" href="blogg.html">Blogg</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <div id="search" class="container">
+            <h1 class="rubrik2">Recept</h1>
+            <form id="search-bar" role='search' >
+                <label for='header-search'>
+                  <span class='visually-hidden'>Search</span>
+                </label>
+                <input type='search' id='header-search' placeholder="Sök recept" data-search>
+                <button type='submit' id="btn-search">
+
+                  <span class='visually-hidden'>Submit Search</span>
+                </button>
+            </form>
+            <form class="m1b" id="categorys" action="">
+                <input class="chip" type="checkbox" id="categoryOne">
+                <label for="categoryOne">Spanskt</label>
+                <input class="chip" type="checkbox" id="categoryTwo">
+                <label for="categoryTwo">Vegetarian</label>
+                <input class="chip" type="checkbox" id="categoryThree">
+                <label for="categoryThree">Pasta</label>
+                <input class="chip" type="checkbox" id="categoryFour">
+                <label for="categoryFour">Chicken</label>
+                <input class="chip" type="checkbox" id="categoryFive">
+                <label for="categoryFive">Seafood</label>
+                <input class="chip" type="checkbox" id="categorySix">
+                <label for="categorySix">Pizza</label>
+                <input class="chip" type="checkbox" id="categorySeven">
+                <label for="categorySeven">Beverage</label>
+                <input class="chip" type="checkbox" id="categoryEight">
+                <label for="categoryEight">Dessert</label>
+            </form>
+        </div>
+        <div class="user-recipes container" data-user-cards>
+            <!-- Use <template> to hold some content that will be hidden when the page loads. Use JavaScript to display it:  -->
+            <template data-user-template>
+                <div class="card">
+                    <a href="" data-link>
+                        <div class="card-text" >
+                            <p data-cat></p>
+                            <h2 data-header></h2>
+                        </div>
+                        <img data-image>
+                        <div class="gradient"></div>
+                    </a>
+                </div>
+            </template>
+        </div>
+        <div class="quote">
+            <div class="content">
+                <h3>Lär dig att laga mat</h3>
+                <a class="btn" href="lar-dig-laga-mat.html">klicka här</a>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="footer-inside">
+          <h3>Recept</h3>
+          <p>Bli uppdaterad på det senaste</p>
+          <form action="/" id="newsletter">
+            <label for="email">
+              <span class="visually-hidden">Email</span>
+            </label>
+            <input class="textField" type="text" name="email" id="email" placeholder="Email">
+            <input class="btn btn-submit" type="submit" value="Skicka">
+          </form>
+          <p class="footer-text">©Copyright 2023 Recept</p>
+        </div>
+      </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>
