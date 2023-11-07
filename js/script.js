@@ -141,14 +141,6 @@ menuButtonRef.addEventListener("click", function(){
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
 });
-searchButtonRef.addEventListener("click", function(){
-    searchRef.classList.add('visible')
-    shadowRef.classList.add('visible')
-});
-searchCloseRef.addEventListener("click", function(){
-    searchRef.classList.remove('visible')
-    shadowRef.classList.remove('visible')
-});
 //kort-länkar
 document.body.addEventListener( 'click', function ( event ) {
     if(event.target.classList.contains('linkListener')){

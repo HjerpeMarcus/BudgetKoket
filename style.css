@@ -15,15 +15,17 @@ body {
   display: flex;
   flex-direction: column;
 }
-.omOssBody #main-footer {
-  margin-top: auto;
-}
 
 .mid-rubrik1 {
   color: #4c560f;
   font-size: 1.5rem;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 300;
+}
+@media (min-width: 700px) {
+  .mid-rubrik1 {
+    font-size: 3rem;
+  }
 }
 
 h3 {
@@ -58,8 +60,14 @@ img {
 }
 
 .logo {
-  font-size: 2rem;
-  font-weight: 700;
+  width: 20vw;
+  margin: auto;
+  max-width: 120px;
+}
+@media (min-width: 700px) {
+  .logo {
+    margin: 0 0 0 1.5rem;
+  }
 }
 
 .btn {
@@ -240,11 +248,25 @@ img {
   padding: 0.5rem 0 0.2rem 0;
   width: 100vw;
   max-width: 100%;
-  background-color: white;
+  background-image: linear-gradient(black, rgba(0, 0, 0, 0));
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
+}
+.main-header.omOss {
+  background-image: none;
+  background-color: #1d1d1d;
+}
+@media (min-width: 700px) {
+  .main-header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
 }
 .main-header .mobile-nav {
   height: 100vh;
@@ -283,11 +305,38 @@ img {
 .main-header .mobile-menuIconContainer {
   width: 30px;
   position: absolute;
-  left: 10px;
+  left: 20px;
+  top: 35%;
 }
-.main-header .logo {
-  text-align: center;
-  font-size: 1.5rem;
+@media (min-width: 700px) {
+  .main-header .mobile-menuIconContainer {
+    display: none;
+  }
+}
+.main-header .desktop-nav {
+  display: none;
+}
+@media (min-width: 700px) {
+  .main-header .desktop-nav {
+    display: block;
+    flex: 0 0 26vw;
+  }
+}
+@media (min-width: 1000px) {
+  .main-header .desktop-nav {
+    flex: 0 0 20vw;
+  }
+}
+.main-header .desktop-nav ul {
+  list-style: none;
+  display: flex;
+  flex: 0 0 100%;
+  justify-content: space-between;
+}
+.main-header .desktop-nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
 }
 
 #hero {
@@ -302,10 +351,11 @@ img {
 @media (min-width: 700px) {
   #hero {
     background-image: url(/img/hero.jpg);
+    padding: 5vw;
   }
 }
 #hero .text {
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-left: 2rem;
 }
 #hero .text p {
@@ -319,9 +369,21 @@ img {
   line-height: 5rem;
   vertical-align: center;
   background-color: #f6f634;
+  overflow: hidden;
+}
+@media (min-width: 700px) {
+  #hero .text p {
+    padding: 1.2rem 2rem 1rem 0.5rem;
+    font-size: 6rem;
+  }
+}
+@media (min-width: 1000px) {
+  #hero .text p {
+    font-size: 6rem;
+  }
 }
 #hero .heroButton {
-  margin-top: 4rem;
+  margin-top: 10rem;
   display: inline-block;
   background-color: #e95e3f;
   border: solid 2px black;
@@ -332,6 +394,13 @@ img {
   font-weight: 600;
   color: white;
 }
+@media (min-width: 700px) {
+  #hero .heroButton {
+    position: absolute;
+    bottom: 1rem;
+    left: 42%;
+  }
+}
 
 .textField {
   padding: 0.6rem 1rem;
@@ -341,24 +410,60 @@ img {
 
 #main-footer {
   background-color: #fdf26d;
-  padding: 1.5rem 1rem 2rem 1rem;
-  color: white;
+  padding: 1.5rem 1.5rem 2rem 1rem;
+}
+@media (min-width: 700px) {
+  #main-footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 #main-footer .footer-inside {
-  color: black;
+  margin: auto;
+}
+@media (min-width: 700px) {
+  #main-footer .footer-inside {
+    display: flex;
+    align-items: center;
+  }
+}
+#main-footer .footer-inside ul {
+  list-style: none;
+}
+@media (min-width: 700px) {
+  #main-footer .footer-inside ul {
+    display: flex;
+    flex: 0 0 70%;
+    margin-left: 2rem;
+  }
+}
+#main-footer .footer-inside ul li a {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  text-decoration: none;
+  margin-top: 1rem;
+  color: #FF5B03;
+  font-family: "Bungee Inline", sans-serif;
+}
+@media (min-width: 700px) {
+  #main-footer .footer-inside ul li a {
+    display: inline-block;
+    margin: 0 0 0 3rem;
+  }
 }
 
 .tips {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-color: #6ecce0;
+  background-color: #A1AED1;
   position: relative;
   overflow: hidden;
 }
 .tips .tipsImage {
-  height: 50vw;
   width: 50vw;
+  max-width: 450px;
   z-index: 3;
   animation: rotation 3s infinite linear;
   position: absolute;
@@ -372,6 +477,11 @@ img {
 .tips .tipsImage.banana.animation {
   left: -15vw;
 }
+@media (min-width: 900px) {
+  .tips .tipsImage.banana.animation {
+    left: 7vw;
+  }
+}
 .tips .tipsImage.cherry {
   bottom: 15vh;
   right: -55vw;
@@ -379,6 +489,11 @@ img {
 }
 .tips .tipsImage.cherry.animation {
   right: -10vw;
+}
+@media (min-width: 900px) {
+  .tips .tipsImage.cherry.animation {
+    right: 7vw;
+  }
 }
 @keyframes rotation {
   0% {
@@ -402,6 +517,7 @@ img {
   background-color: white;
   padding: 2rem;
   width: 40vw;
+  min-height: 130px;
   border-radius: 32px;
   position: absolute;
   font-size: 0.8rem;
@@ -414,6 +530,11 @@ img {
 }
 .tips .speechBubble.bubble1.animation {
   right: 5vw;
+}
+@media (min-width: 1200px) {
+  .tips .speechBubble.bubble1.animation {
+    right: 23vw;
+  }
 }
 .tips .speechBubble.bubble1:before {
   content: "";
@@ -442,21 +563,31 @@ img {
   position: absolute;
   top: 0;
   left: -50vw;
-  width: 200vw;
+  width: 5000px;
 }
 .tips .speechBubble.bubble2 {
   bottom: 10vh;
   left: -50vw;
 }
+@media (min-width: 700px) {
+  .tips .speechBubble.bubble2 {
+    bottom: 15vh;
+  }
+}
 .tips .speechBubble.bubble2.animation {
   left: 5vw;
+}
+@media (min-width: 1200px) {
+  .tips .speechBubble.bubble2.animation {
+    left: 23vw;
+  }
 }
 .tips .speechBubble.bubble2:before {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 10px solid black;
+  border-left: 10px solid rgb(0, 0, 0);
   border-right: 10px solid transparent;
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
@@ -479,7 +610,7 @@ img {
   position: absolute;
   top: 0;
   right: -50vw;
-  width: 200vw;
+  width: 5000px;
 }
 
 .border-container {
@@ -562,4 +693,76 @@ img {
 }
 .teamContainer .teamPic .personPic img {
   width: 100%;
+}
+
+.recept-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.recept-cards:after {
+  content: "";
+  flex: 1 1 100%;
+  max-width: 49%;
+}
+.recept-cards .card {
+  position: relative;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 98%;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+  background-color: white;
+}
+@media (min-width: 700px) {
+  .recept-cards .card {
+    flex: 0 0 48%;
+  }
+}
+@media (min-width: 1300px) {
+  .recept-cards .card {
+    flex: 0 0 24%;
+  }
+}
+.recept-cards .card .imageContainer {
+  height: 200px;
+}
+.recept-cards .card .imageContainer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.recept-cards .card .cardHeader {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.recept-cards .card .cardDesc {
+  margin-bottom: 1rem;
+}
+.recept-cards .card .cardLink {
+  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  border: solid 2px black;
+  border-radius: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  color: black;
+}
+.recept-cards .card .cardLink .linkText {
+  margin-right: 0.5rem;
+}
+.recept-cards .card.hide {
+  display: none;
+}
+.recept-cards .card:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
