@@ -38,8 +38,6 @@ function getCard (){
         const header = card.querySelector('[data-header]');
         const img = card.querySelector('[data-image]');
         const desc = card.querySelector('[data-desc]');
-        const link = card.querySelector('[data-link]');
-        link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
         desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
@@ -56,7 +54,7 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
-    const maxCardsToShow = 3; // Antal kort att visa
+    const maxCardsToShow = 4; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
@@ -65,8 +63,7 @@ fetch(jsonUrl)
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
                 const desc = card.querySelector('[data-desc]');
-                const link = card.querySelector('[data-link]');
-                link.setAttribute('href', recipe.html);
+                card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
                 desc.textContent = recipe.description;
@@ -130,14 +127,23 @@ const imageObserver = new IntersectionObserver(entries => {
   bubbleObserver.observe(document.querySelector('.bubbleChecker1'));
   bubbleObserver.observe(document.querySelector('.bubbleChecker2'));
   imageObserver.observe(document.querySelector('.cherry'));
-  //header-knappar
+//header-knappar
 const menuButtonRef = document.querySelector('#mobile-headerMenu');
 const searchButtonRef = document.querySelector('#mobile-searchIcon');
-const closeButtonRef = document.querySelector('.closeIcon')
-const navRef = document.querySelector('.mobile-nav')
+const closeButtonRef = document.querySelector('.closeIcon');
+const searchRef = document.querySelector('.mobile-search');
+const searchCloseRef = document.querySelector('.closeSearch');
+const navRef = document.querySelector('.mobile-nav');
+const shadowRef = document.querySelector('.search-shadow');
 menuButtonRef.addEventListener("click", function(){
     navRef.classList.add('visible')
-})
+});
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
-})
+});
+//kort-länkar
+document.body.addEventListener( 'click', function ( event ) {
+    if(event.target.classList.contains('linkListener')){
+            sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
+    };
+  } );
