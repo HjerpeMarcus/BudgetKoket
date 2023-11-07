@@ -38,8 +38,6 @@ function getCard (){
         const header = card.querySelector('[data-header]');
         const img = card.querySelector('[data-image]');
         const desc = card.querySelector('[data-desc]');
-        const link = card.querySelector('[data-link]');
-        link.setAttribute('href', recipe.html);
         header.textContent = recipe.name;
         desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
@@ -56,10 +54,11 @@ fetch(jsonUrl)
     if(dataUserCards){
         getCard();
     }
+    const maxCardsToShow = 3; // Antal kort att visa
     if(dataUserPopuar){
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
-            recipes = data.map(recipe => { // Använd slice() för att begränsa antalet kort
+            recipes = data.slice(0, maxCardsToShow).map(recipe => { // Använd slice() för att begränsa antalet kort
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
@@ -124,9 +123,16 @@ const imageObserver = new IntersectionObserver(entries => {
       }
     })
   });
+  imageObserver.observe(document.querySelector('.banana'));
+  bubbleObserver.observe(document.querySelector('.bubbleChecker1'));
+  bubbleObserver.observe(document.querySelector('.bubbleChecker2'));
+  imageObserver.observe(document.querySelector('.cherry'));
 //header-knappar
 const menuButtonRef = document.querySelector('#mobile-headerMenu');
+const searchButtonRef = document.querySelector('#mobile-searchIcon');
 const closeButtonRef = document.querySelector('.closeIcon');
+const searchRef = document.querySelector('.mobile-search');
+const searchCloseRef = document.querySelector('.closeSearch');
 const navRef = document.querySelector('.mobile-nav');
 const shadowRef = document.querySelector('.search-shadow');
 menuButtonRef.addEventListener("click", function(){
@@ -134,6 +140,14 @@ menuButtonRef.addEventListener("click", function(){
 });
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
+});
+searchButtonRef.addEventListener("click", function(){
+    searchRef.classList.add('visible')
+    shadowRef.classList.add('visible')
+});
+searchCloseRef.addEventListener("click", function(){
+    searchRef.classList.remove('visible')
+    shadowRef.classList.remove('visible')
 });
 //kort-länkar
 document.body.addEventListener( 'click', function ( event ) {

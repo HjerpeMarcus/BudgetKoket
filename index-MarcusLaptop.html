@@ -12,10 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="main-header">
+        <div class="search-shadow"></div>
         <nav class="mobile-nav">
             <span class="material-icons closeIcon">
                 close
@@ -30,17 +32,18 @@
         <div id="mobile-headerMenu" class="mobile-menuIconContainer">
             <img class="icon" src="/img/menu 1.svg">
         </div>
-        <img class="logo" src="/img/logo_w.svg">
-        <nav class="desktop-nav">
-            <ul>
-                <li><a href="#">
-                    Recept
-                </a></li>
-                <li><a href="omOss.html">
-                    Om Oss
-                </a></li>
-            </ul>
-        </nav>
+        <p class="logo">Almafi</p>
+        <div class="mobile-search">
+            <form class="searchForm">
+                <input type="text" id="searchProp">
+            </form>
+            <span class="material-icons closeSearch">
+                close
+                </span>
+        </div>
+        <div id="mobile-searchIcon" class="mobile-menuIconContainer">
+            <img class="icon" src="/img/pan 1.svg">
+        </div> 
     </header>
     <section id="hero">
         <div class="text">
@@ -61,7 +64,7 @@
     </div>
     </section>
     <main class="container">
-        <section class="popular cardContainer">
+        <section class="popular">
             <h2 class="mid-rubrik1">Poppis just nu</h2>
             <div class="popular-cards" data-user-popular>
                 <template data-user-template>
@@ -71,7 +74,7 @@
                             <p data-header class="cardHeader"></p>
                             <p data-desc class="cardDesc"></p>
                         </div>
-                        <a href="individuellaRecept.html" class="cardLink linkListener">
+                        <a href="#" class="cardLink linkListener">
                             <span class="linkText linkListener"> Till receptet</span> 
                             <span class="material-icons linkIcon linkListener">
                                 arrow_forward
@@ -93,13 +96,13 @@
                 </div>
             <img class="tipsImage cherry" src="/img/cherries.svg"></img>
         </section>
-        <section class="popular  cardContainer" >
+        <section class="popular" >
             <h2 class="mid-rubrik1">Höstiga måltider</h2>
             <div class="popular-cards" data-user-popular>
                 <!-- rör ej template HTML -->
                 <template data-user-template>
                     <div class="card">
-                        <a href="individuellaRecept.html" class="cardLink">
+                        <a href="#" class="cardLink">
                             <p data-cat></p>
                             <h3 data-header></h3>
                         </header>
@@ -116,12 +119,11 @@
     </div>
     <footer id="main-footer">
         <div class="footer-inside">
-            <img class="logo" src="/img/logo_r.svg">
-            <ul>
-                <li><a href="omOss.html">Om Oss</a></li>
-                <li><a href="#">Recept</a></li>
-            </ul>
+            <h2 class="mid-rubrik1">Lorem ipsum</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus diam turpis. Etiam dignissim velit vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur cursus diam turpis. Etiam dignissim velit vitae.
+            </p>
         </footer>
-    <script src="/js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
