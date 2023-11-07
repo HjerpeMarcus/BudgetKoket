@@ -36,21 +36,8 @@ img {
   height: auto;
 }
 
-.cardContainer {
-  margin: auto;
-}
-@media (min-width: 700px) {
-  .cardContainer {
-    max-width: 900px;
-  }
-}
-@media (min-width: 1300px) {
-  .cardContainer {
-    max-width: 1400px;
-  }
-}
-
 .container {
+  max-width: 1200px;
   margin: auto;
 }
 .container .popular {
@@ -194,9 +181,9 @@ img {
     flex: 0 0 48%;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1000px) {
   .popular-cards .card {
-    flex: 0 0 24%;
+    flex: 0 0 30%;
   }
 }
 .popular-cards .card .imageContainer {
@@ -237,19 +224,70 @@ img {
 }
 
 .main-header {
-  padding: 0.5rem 0 0.2rem 0;
+  padding: 0.5rem 0 0.5rem 0;
   width: 100vw;
-  max-width: 100%;
   background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
 }
+.main-header .search-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.295);
+  height: 100vh;
+  width: 100vw;
+  z-index: 11;
+  display: none;
+}
+.main-header .search-shadow.visible {
+  display: block;
+}
+.main-header .search-shadow .text {
+  padding-top: 10rem;
+  padding-left: 2rem;
+}
+.main-header .search-shadow .text div {
+  background-color: #F6F634;
+  display: inline-block;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.main-header .search-shadow .text div p {
+  font-size: 4rem;
+  font-family: "Bungee Inline", sans-serif;
+  font-weight: 300;
+  color: #4C560F;
+  display: inline-block;
+  line-height: 4rem;
+  padding: 1rem;
+  white-space: nowrap;
+}
+.main-header .search-shadow .searchForm {
+  flex: 0 0 75%;
+}
+.main-header .search-shadow .searchForm #searchProp {
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+  background-color: transparent;
+  border: solid 2px black;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  width: 100%;
+}
+.main-header .search-shadow .closeSearch {
+  font-size: 2rem;
+}
 .main-header .mobile-nav {
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   background-color: white;
   z-index: 11;
   position: absolute;
@@ -281,11 +319,18 @@ img {
   flex: 0 0 10%;
 }
 .main-header .mobile-menuIconContainer {
-  width: 30px;
-  position: absolute;
-  left: 10px;
+  flex: 0 0 22%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.main-header .mobile-menuIconContainer .headerIcon {
+  font-size: 2rem;
 }
 .main-header .logo {
+  flex: 0 0 56%;
   text-align: center;
   font-size: 1.5rem;
 }
@@ -294,7 +339,6 @@ img {
   position: relative;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   background-image: url(/img/hero_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -340,7 +384,7 @@ img {
 }
 
 #main-footer {
-  background-color: #fdf26d;
+  background-color: #7EFD9A;
   padding: 1.5rem 1rem 2rem 1rem;
   color: white;
 }
@@ -351,7 +395,6 @@ img {
 .tips {
   width: 100vw;
   height: 100vh;
-  max-width: 100%;
   background-color: #6ecce0;
   position: relative;
   overflow: hidden;
@@ -562,4 +605,4 @@ img {
 }
 .teamContainer .teamPic .personPic img {
   width: 100%;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style-MarcusLaptop.css.map */

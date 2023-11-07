@@ -17,6 +17,7 @@
 </head>
 <body>
     <header class="main-header">
+        <div class="search-shadow"></div>
         <nav class="mobile-nav">
             <span class="material-icons closeIcon">
                 close
@@ -32,6 +33,17 @@
             <img class="icon" src="/img/menu 1.svg">
         </div>
         <p class="logo">Almafi</p>
+        <div class="mobile-search">
+            <form class="searchForm">
+                <input type="text" id="searchProp">
+            </form>
+            <span class="material-icons closeSearch">
+                close
+                </span>
+        </div>
+        <div id="mobile-searchIcon" class="mobile-menuIconContainer">
+            <img class="icon" src="/img/pan 1.svg">
+        </div> 
     </header>
     <section id="hero">
         <div class="text">
@@ -52,7 +64,7 @@
     </div>
     </section>
     <main class="container">
-        <section class="popular cardContainer">
+        <section class="popular">
             <h2 class="mid-rubrik1">Poppis just nu</h2>
             <div class="popular-cards" data-user-popular>
                 <template data-user-template>
@@ -84,7 +96,7 @@
                 </div>
             <img class="tipsImage cherry" src="/img/cherries.svg"></img>
         </section>
-        <section class="popular  cardContainer" >
+        <section class="popular" >
             <h2 class="mid-rubrik1">Höstiga måltider</h2>
             <div class="popular-cards" data-user-popular>
                 <!-- rör ej template HTML -->
