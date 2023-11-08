@@ -11,18 +11,144 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: #fdf9da;
 }
-.omOssBody{
-  min-height:100vh;
-  display:flex;
-  flex-direction:column;
+
+/* Styles for the cookie popup */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 999; /* Ensure it's above other elements */
+}
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 800px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  min-width: 80%;
+  @media (min-width: 800px) {
+    min-width: 20%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    margin: 20px 0;
+  }
+}
+#only-necessary-button {
+  border: none;
+}
+#ok-button {
+  background-color: #fac000;
+
+  &:hover {
+    background-color: #e0ab00;
+  }
+}
+.b {
+  text-align: center;
+}
+/* Add styles for the close icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+.cookie-switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input:checked + .slider {
+  background-color: #2196f3;
+}
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+.cook-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.omOssBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 .mid-rubrik1 {
   color: #4c560f;
   font-size: 1.5rem;
   font-family: "Bungee Inline", sans-serif;
   font-weight: 300;
-  @media(min-width:700px){
-    font-size:3rem;
+  @media (min-width: 700px) {
+    font-size: 3rem;
   }
 }
 h3 {
@@ -40,14 +166,14 @@ img {
   display: block;
   height: auto;
 }
-.cardContainer{
+.cardContainer {
   @media (min-width: 700px) {
-    max-width:900px;
+    max-width: 900px;
   }
   @media (min-width: 1300px) {
-    max-width:1400px;
+    max-width: 1400px;
   }
-  margin:auto;
+  margin: auto;
 }
 .container {
   margin: auto;
@@ -56,11 +182,11 @@ img {
   }
 }
 .logo {
-  width:20vw;
-  margin:auto;
-  max-width:120px;
-  @media(min-width:700px){
-    margin:0 0 0 1.5rem;
+  width: 20vw;
+  margin: auto;
+  max-width: 120px;
+  @media (min-width: 700px) {
+    margin: 0 0 0 1.5rem;
   }
 }
 .btn {
@@ -220,28 +346,28 @@ img {
 .main-header {
   padding: 0.5rem 0 0.2rem 0;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   background-image: linear-gradient(black, rgba(0, 0, 0, 0));
   position: fixed;
   top: 0;
   left: 0;
   z-index: 10;
-  &.omOss{
-    background-image:none;
-    background-color:#1d1d1d;
+  &.omOss {
+    background-image: none;
+    background-color: #1d1d1d;
   }
   @media (min-width: 700px) {
-    position:absolute;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding-right:5vw;
-    padding-left:5vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5vw;
+    padding-left: 5vw;
   }
   .mobile-nav {
     height: 100vh;
     width: 100vw;
-    max-width:100%;
+    max-width: 100%;
     background-color: white;
     z-index: 11;
     position: absolute;
@@ -274,32 +400,32 @@ img {
   }
   .mobile-menuIconContainer {
     width: 30px;
-    position:absolute;
-    left:20px;
-    top:35%;
-    @media(min-width:700px){
-      display:none;
+    position: absolute;
+    left: 20px;
+    top: 35%;
+    @media (min-width: 700px) {
+      display: none;
     }
   }
-  .desktop-nav{
-    display:none;
-    @media(min-width:700px){
-      display:block;
+  .desktop-nav {
+    display: none;
+    @media (min-width: 700px) {
+      display: block;
       flex: 0 0 26vw;
     }
-    @media(min-width:1000px){
+    @media (min-width: 1000px) {
       flex: 0 0 20vw;
     }
-    ul{
-      list-style:none;
-      display:flex;
+    ul {
+      list-style: none;
+      display: flex;
       flex: 0 0 100%;
-      justify-content:space-between;
-      li{
-        a{
-          text-decoration:none;
-          color:white;
-          font-size:1.4rem;
+      justify-content: space-between;
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.4rem;
         }
       }
     }
@@ -307,7 +433,7 @@ img {
 }
 @mixin coverer {
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   height: 50vh;
   position: absolute;
   top: 0;
@@ -317,7 +443,7 @@ img {
   position: relative;
   height: 100vh;
   width: 100vw;
-  max-width:100%;
+  max-width: 100%;
   background-image: url(/img/hero_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -339,18 +465,18 @@ img {
       line-height: 5rem;
       vertical-align: center;
       background-color: #f6f634;
-      overflow:hidden;
+      overflow: hidden;
       @media (min-width: 700px) {
         padding: 1.2rem 2rem 1rem 0.5rem;
-        font-size:6rem;
+        font-size: 6rem;
       }
       @media (min-width: 1000px) {
-        font-size:6rem;
+        font-size: 6rem;
       }
     }
   }
   .heroButton {
-    margin-top:10rem;
+    margin-top: 10rem;
     display: inline-block;
     background-color: #e95e3f;
     border: solid 2px black;
@@ -360,10 +486,10 @@ img {
     font-size: 1.5rem;
     font-weight: 600;
     color: white;
-    @media(min-width:700px){
-      position:absolute;
-      bottom:1rem;
-      left:42%;
+    @media (min-width: 700px) {
+      position: absolute;
+      bottom: 1rem;
+      left: 42%;
     }
   }
 }
@@ -375,34 +501,34 @@ img {
 #main-footer {
   background-color: #fdf26d;
   padding: 1.5rem 1.5rem 2rem 1rem;
-  @media(min-width:700px){
-    padding-left:5rem;
-    padding-right:5rem;
+  @media (min-width: 700px) {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
-  .footer-inside{
-    margin:auto;
-    @media(min-width:700px){
-      display:flex;
-      align-items:center;
+  .footer-inside {
+    margin: auto;
+    @media (min-width: 700px) {
+      display: flex;
+      align-items: center;
     }
-    ul{
-      list-style:none;
-      @media(min-width:700px){
-        display:flex;
+    ul {
+      list-style: none;
+      @media (min-width: 700px) {
+        display: flex;
         flex: 0 0 70%;
-        margin-left:2rem;
+        margin-left: 2rem;
       }
-      li{
-        a{
-          display:block;
-          text-align:center;
-          font-size:2rem;
-          text-decoration:none;
+      li {
+        a {
+          display: block;
+          text-align: center;
+          font-size: 2rem;
+          text-decoration: none;
           margin-top: 1rem;
-          color:#FF5B03;
+          color: #ff5b03;
           font-family: "Bungee Inline", sans-serif;
-          @media(min-width:700px){
-            display:inline-block;
+          @media (min-width: 700px) {
+            display: inline-block;
             margin: 0 0 0 3rem;
           }
         }
@@ -413,13 +539,13 @@ img {
 .tips {
   width: 100vw;
   height: 100vh;
-  max-width:100%;
-  background-color: #A1AED1;
+  max-width: 100%;
+  background-color: #a1aed1;
   position: relative;
   overflow: hidden;
   .tipsImage {
     width: 50vw;
-    max-width:450px;
+    max-width: 450px;
     z-index: 3;
     animation: rotation 3s infinite linear;
     position: absolute;
@@ -430,7 +556,7 @@ img {
       width: 60vw;
       &.animation {
         left: -15vw;
-        @media(min-width:900px){
+        @media (min-width: 900px) {
           left: 7vw;
         }
       }
@@ -441,7 +567,7 @@ img {
       width: 55vw;
       &.animation {
         right: -10vw;
-        @media(min-width:900px){
+        @media (min-width: 900px) {
           right: 7vw;
         }
       }
@@ -469,7 +595,7 @@ img {
     background-color: white;
     padding: 2rem;
     width: 40vw;
-    min-height:130px;
+    min-height: 130px;
     border-radius: 32px;
     position: absolute;
     font-size: 0.8rem;
@@ -480,7 +606,7 @@ img {
       right: -50vw;
       &.animation {
         right: 5vw;
-        @media(min-width:1200px){
+        @media (min-width: 1200px) {
           right: 23vw;
         }
       }
@@ -517,12 +643,12 @@ img {
     &.bubble2 {
       bottom: 10vh;
       left: -50vw;
-      @media(min-width:700px){
+      @media (min-width: 700px) {
         bottom: 15vh;
       }
       &.animation {
         left: 5vw;
-        @media(min-width:1200px){
+        @media (min-width: 1200px) {
           left: 23vw;
         }
       }
@@ -608,7 +734,6 @@ img {
     overflow: hidden;
     background-color: white;
     .aboutUsText {
-
     }
   }
 }
@@ -627,7 +752,6 @@ img {
       margin: auto;
       display: flex;
       justify-content: space-between;
-
     }
     .personPic {
       margin-top: 2rem;
@@ -641,7 +765,6 @@ img {
       img {
         width: 100%;
       }
-
     }
   }
 }
@@ -710,70 +833,70 @@ img {
     }
   }
 }
-.individuellaContainer{
+.individuellaContainer {
   #rubrik {
     color: #4c560f;
     font-size: 1.8rem;
     font-family: "Bungee Inline", sans-serif;
     font-weight: 300;
-    text-align:center;
-    margin-top:15vh;
-    @media(min-width:700px){
-      font-size:4rem;
+    text-align: center;
+    margin-top: 15vh;
+    @media (min-width: 700px) {
+      font-size: 4rem;
     }
   }
-  .container{
-    padding:1rem;
-    h2{
+  .container {
+    padding: 1rem;
+    h2 {
       font-family: "Bungee Inline", sans-serif;
-      font-weight:300;
+      font-weight: 300;
     }
-    .topContainer{
-      @media(min-width:700px){
-        display:flex;
+    .topContainer {
+      @media (min-width: 700px) {
+        display: flex;
       }
-      #imageContainer{
+      #imageContainer {
         padding: 0;
-        overflow:hidden;
+        overflow: hidden;
         border: solid 2px black;
         box-shadow: black 3px 3px;
         border-radius: 0.8rem;
-        height:330px;
-        margin-bottom:1rem;
-        @media(min-width:700px){
+        height: 330px;
+        margin-bottom: 1rem;
+        @media (min-width: 700px) {
           flex: 0 0 350px;
         }
-        .recipeImage{
-          width:100%;
-          height:100%;
-          object-fit:cover;
+        .recipeImage {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
       }
-      .descContainer{
+      .descContainer {
         padding: 0.5rem 0.6rem 0.5rem 0.6rem;
         border: solid 2px black;
         box-shadow: black 3px 3px;
         border-radius: 0.8rem;
-        background-color:rgb(255, 255, 255);
-        margin-bottom:1rem;
-        @media(min-width:700px){
+        background-color: rgb(255, 255, 255);
+        margin-bottom: 1rem;
+        @media (min-width: 700px) {
           flex: 1 1 auto;
-          margin-left:1rem;
+          margin-left: 1rem;
         }
       }
     }
-    .contentContainer{
+    .contentContainer {
       padding: 0.5rem 0.6rem 0.5rem 0.6rem;
       border: solid 2px black;
       box-shadow: black 3px 3px;
       border-radius: 0.8rem;
-      background-color:rgb(255, 255, 255);
-      @media(min-width:700px){
-        display:flex;
-        justify-content:space-between;
+      background-color: rgb(255, 255, 255);
+      @media (min-width: 700px) {
+        display: flex;
+        justify-content: space-between;
         padding: 0 2rem 1rem 2rem;
       }
-      .contentSection{
+      .contentSection {
         flex: 0 0 35%;
       }
     }

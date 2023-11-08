@@ -10,6 +10,145 @@ body {
   background-color: #fdf9da;
 }
 
+/* Styles for the cookie popup */
+.cookie-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  z-index: 999; /* Ensure it's above other elements */
+}
+
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  min-width: 80%;
+}
+@media (min-width: 800px) {
+  .popup-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media (min-width: 800px) {
+  .popup-content {
+    min-width: 20%;
+  }
+}
+.popup-content h2 {
+  font-size: 1.5rem;
+}
+.popup-content p {
+  margin: 20px 0;
+}
+
+#only-necessary-button {
+  border: none;
+}
+
+#ok-button {
+  background-color: #fac000;
+}
+#ok-button:hover {
+  background-color: #e0ab00;
+}
+
+.b {
+  text-align: center;
+}
+
+/* Add styles for the close icon */
+.close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+}
+
+.cookie-switch-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+/* Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #2196f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.cook-settings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 .omOssBody {
   min-height: 100vh;
   display: flex;
@@ -443,7 +582,7 @@ img {
   font-size: 2rem;
   text-decoration: none;
   margin-top: 1rem;
-  color: #FF5B03;
+  color: #ff5b03;
   font-family: "Bungee Inline", sans-serif;
 }
 @media (min-width: 700px) {
@@ -457,7 +596,7 @@ img {
   width: 100vw;
   height: 100vh;
   max-width: 100%;
-  background-color: #A1AED1;
+  background-color: #a1aed1;
   position: relative;
   overflow: hidden;
 }
