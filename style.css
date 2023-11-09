@@ -482,7 +482,6 @@ img {
   position: relative;
   height: 100vh;
   width: 100vw;
-  max-width: 100%;
   background-image: url(/img/hero_mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -602,7 +601,6 @@ img {
 }
 .tips .tipsImage {
   width: 50vw;
-  max-width: 450px;
   z-index: 3;
   animation: rotation 3s infinite linear;
   position: absolute;
@@ -839,153 +837,4 @@ img {
 }
 .teamContainer .teamPic .personPic img {
   width: 100%;
-}
-
-.recept-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.recept-cards:after {
-  content: "";
-  flex: 1 1 100%;
-  max-width: 49%;
-}
-.recept-cards .card {
-  position: relative;
-  height: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 98%;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width: 700px) {
-  .recept-cards .card {
-    flex: 0 0 48%;
-  }
-}
-@media (min-width: 1300px) {
-  .recept-cards .card {
-    flex: 0 0 24%;
-  }
-}
-.recept-cards .card .imageContainer {
-  height: 200px;
-}
-.recept-cards .card .imageContainer img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.recept-cards .card .cardHeader {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.recept-cards .card .cardDesc {
-  margin-bottom: 1rem;
-}
-.recept-cards .card .cardLink {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  border: solid 2px black;
-  border-radius: 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  text-decoration: none;
-  color: black;
-}
-.recept-cards .card .cardLink .linkText {
-  margin-right: 0.5rem;
-}
-.recept-cards .card.hide {
-  display: none;
-}
-.recept-cards .card:last-child {
-  margin-bottom: 0;
-}
-
-.individuellaContainer #rubrik {
-  color: #4c560f;
-  font-size: 1.8rem;
-  font-family: "Bungee Inline", sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin-top: 15vh;
-}
-@media (min-width: 700px) {
-  .individuellaContainer #rubrik {
-    font-size: 4rem;
-  }
-}
-.individuellaContainer .container {
-  padding: 1rem;
-}
-.individuellaContainer .container h2 {
-  font-family: "Bungee Inline", sans-serif;
-  font-weight: 300;
-}
-@media (min-width: 700px) {
-  .individuellaContainer .container .topContainer {
-    display: flex;
-  }
-}
-.individuellaContainer .container .topContainer #imageContainer {
-  padding: 0;
-  overflow: hidden;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  border-radius: 0.8rem;
-  height: 330px;
-  margin-bottom: 1rem;
-}
-@media (min-width: 700px) {
-  .individuellaContainer .container .topContainer #imageContainer {
-    flex: 0 0 350px;
-  }
-}
-.individuellaContainer .container .topContainer #imageContainer .recipeImage {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.individuellaContainer .container .topContainer .descContainer {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  border-radius: 0.8rem;
-  background-color: rgb(255, 255, 255);
-  margin-bottom: 1rem;
-}
-@media (min-width: 700px) {
-  .individuellaContainer .container .topContainer .descContainer {
-    flex: 1 1 auto;
-    margin-left: 1rem;
-  }
-}
-.individuellaContainer .container .contentContainer {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  border-radius: 0.8rem;
-  background-color: rgb(255, 255, 255);
-}
-@media (min-width: 700px) {
-  .individuellaContainer .container .contentContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem 1rem 2rem;
-  }
-}
-.individuellaContainer .container .contentContainer .contentSection {
-  flex: 0 0 35%;
 }/*# sourceMappingURL=style.css.map */
