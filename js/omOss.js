@@ -135,3 +135,8 @@ menuButtonRef.addEventListener("click", function(){
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
 });
+document.body.addEventListener( 'click', function ( event ) {
+    if(event.target.classList.contains('linkListener')){
+            sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
+    };
+  } );

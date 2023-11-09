@@ -1,528 +1,413 @@
 [
     {
         "id": 1,
-        "name": "Zeinas paella med kyckling och räkor",
-        "category": "Spanskt",
-        "description": "Zeinas goda variant på den klassiska spanska paellan med ris, saffran, kyckling, räkor och ärtor. En utmärkt festrätt där allt smidigt lagas i en och samma panna.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
+                "quantity": "2 dl",
+                "name": "vetemjöl"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
                 "quantity": "4 dl",
-                "name": "risottoris (eller paellaris)"
+                "name": "mjölk (3%)"
             },
             {
-                "quantity": "1 st",
-                "name": "gul lök"
+                "quantity": "2",
+                "name": "ägg"
             },
             {
-                "quantity": "1 st",
-                "name": "röd paprika"
-            },
-            {
-                "quantity": "4 klyftor",
-                "name": "vitlök"
-            },
-            {
-                "quantity": "400 g",
-                "name": "krossade tomater"
-            },
-            {
-                "quantity": "3 st",
-                "name": "majskycklinglårfilé"
-            },
-            {
-                "quantity": "100 g",
-                "name": "räkor med skal"
-            },
-            {
-                "quantity": "60 g",
-                "name": "frysta ärtor"
-            },
-            {
-                "quantity": "1 g",
-                "name": "saffran"
-            },
-            {
-                "quantity": "2 tsk",
-                "name": "paprikapulver"
-            },
-            {
-                "quantity": "1 liter",
-                "name": "vatten"
-            },
-            {
-                "quantity": "2 st",
-                "name": "fiskbuljongtärningar"
-            },
-            {
-                "quantity": "1 st",
-                "name": "citron"
-            },
-            {
-                "quantity": "1 dl",
-                "name": "olivolja"
-            },
-            {
-                "quantity": "",
-                "name": "Salt"
-            },
-            {
-                "quantity": "",
-                "name": "Peppar"
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Skala och hacka löken och vitlök fint. Dela, kärna ur och skär paprikan i tärningar.",
-            "Skär kycklingen i bitar.",
-            "Stek kycklingen i olja i en stor panna tills den fått fin färg runtom. Ta upp och lägg åt sidan.",
-            "Lägg den hackade gula löken i pannan och stek tills den är mjuk och fått lite färg. Tillsätt vitlök och paprika, fortsätt steka 1-2 minuter.",
-            "Strö över paprikapulver och saffran, vänd runt. Tillsätt krossade tomater och blanda allting noga. Låt tomatsåsen puttra utan lock i ca 15 minuter. Lägg i kycklingen.",
-            "Skölj riset noga i ljummet vatten och låt rinna av. Vänd ner riset i tomatsåsen och blanda så att riset fördelas jämnt i såsen. Nu ska detta helst vara den sista gången du rör runt riset. Om du blandar riset för ofta kommer riskornen börja släppa ifrån sig massa stärkelse och istället för en paella kommer du att få en risotto.",
-            "Häll på kokhett vatten som du har blandat med fond eller buljong. Salta och peppra. Skaka pannan försiktigt tills allting blandas samman, undvik att röra runt riset. Låt paellan sjuda på medelvärme utan lock i ca 10 minuter. Skaka på pannan lite lätt efter halva tillagningstiden.",
-            "Tryck ner räkorna lite lätt på toppen av riset. Låt puttra i ytterligare 10 minuter. Du kan tillsätta mer vatten om det känns för torrt.",
-            "Strö över ärtorna, täck pannan med ett lock eller folie och låt allting tillagas någon minut. Smaka av och se så att riset är färdigt. Ta från värmen och låt vila ca 5 minuter före servering. Toppa med citronklyftor och servera."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
         "html": "recept/paella.html",
         "time": "40 min",
-        "imageURL": "img/paella.jpg"
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 2,
-        "name": "Spaghetti Bolognese",
-        "category": "pasta",
-        "description": "En klassisk italiensk rätt med smakrik köttfärssås och al dente kokt spaghetti.",
+        "name": "Kyckling med rotfrukter och ramslöksyoghurt",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
-                "quantity": "250 g",
-                "name": "spaghetti",
-                "type": "Pasta"
+                "quantity": "",
+                "name": "KYCKLING"
             },
             {
-                "quantity": "300 g",
-                "name": "köttfärs",
-                "type": "Meat"
+                "quantity": "1/2 kg",
+                "name": "frysta eller färska kycklingklubbor"
             },
             {
-                "quantity": "1 burk",
-                "name": "krossade tomater",
-                "type": "Canned Goods"
+                "quantity": "1 1/4 msk",
+                "name": "japansk soja"
             },
             {
-                "quantity": "1",
-                "name": "gul lök",
-                "type": "Vegetables"
+                "quantity": "1/2 msk",
+                "name": "ketchup"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "rosmarin"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "oregano"
+            },
+            {
+                "quantity": "1/2 msk",
+                "name": "rapsolja"
+            },
+            {
+                "quantity": "1/4 tsk",
+                "name": "nymalen svartpeppar"
+            },
+            {
+                "quantity": "1/2",
+                "name": "vitlöksklyfta"
+            },
+            {
+                "quantity": "1 1/2 msk",
+                "name": "smör"
+            },
+            {
+                "quantity": "1/2 dl",
+                "name": "vatten"
+            },
+            {
+                "quantity": "",
+                "name": "ROTFRUKTER"
             },
             {
                 "quantity": "2",
-                "name": "vitlöksklyftor",
-                "type": "Vegetables"
+                "name": "rödbetor"
+            },
+            {
+                "quantity": "2",
+                "name": "stora morötter"
+            },
+            {
+                "quantity": "2",
+                "name": "små bitar (75g st) kålrot"
+            },
+            {
+                "quantity": "2",
+                "name": "palsternackor"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "rapsolja"
+            },
+            {
+                "quantity": "2 krm",
+                "name": "salt"
+            },
+            {
+                "quantity": "2 krm",
+                "name": "nymalen svartpeppar"
+            },
+            {
+                "quantity": "",
+                "name": "HET YOGHURTSÅS"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "matyoghurt (10%)"
+            },
+            {
+                "quantity": "1/4 dl",
+                "name": "sweet chilisås"
+            },
+            {
+                "quantity": "",
+                "name": "rivet skal från 1/4 citron"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "färskpressad citronjuice"
+            },
+            {
+                "quantity": "1 krm",
+                "name": "salt"
+            },
+            {
+                "quantity": "1/4 krm",
+                "name": "nymalen svartpeppar"
             }
         ],
         "steps": [
-            "Koka spaghettin enligt anvisningarna på förpackningen.",
-            "Stek köttfärsen tills den är genomstekt. Tillsätt lök och vitlök.",
-            "Tillsätt de krossade tomaterna och låt sjuda i cirka 15-20 minuter.",
-            "Servera köttfärssåsen över den kokta spaghettin."
+            "Kycklingen: Sätt ugnen på 225°C.",
+            "Blanda soja, ketchup, rosmarin och oregano med olja och peppar. Skala och pressa ner vitlöken.",
+            "Stek kycklingklubborna i ugnen i ca 45 minuter (ca 30 minuter om de är färska), tills köttsaften är klar och innertemperaturen är 82˚C (intill benet). Ös kycklingen ett par gånger under tillagningen.",
+            "Häll i mer vatten om det skulle behövas. Spara gärna skyn. Häll ner den i en skål eller en burk och förvara i kylskåpet. Ta bort ev fett som ligger överst före användning.",
+            "Rostade rotfrukter: Skala och skär rotfrukterna i 2-3 cm stora bitar. Lägg på en bakpappersklädd plåt eller i en liten ugnssäker form.",
+            "Ringla över olja och rydda med salt och peppar. Blanda runt.",
+            "Rosta rotfrukterna i ugnen ca 30 minuter, tills de är mjuka med lite tuggmotstånd.",
+            "Het yoghurt: Blanda yoghurt, sweet chilisås, citronskal och citronjuice. Smaka av med salt och peppar."
         ],
-        "timers": [
-            0,
-            0,
-            900,
-            0
-        ],
-        "html": "recept/spaghetti_bolognese.html",
-        "imageURL": "img/bolognese.jpg"
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/yoghurtkyckling.jpg"
     },
     {
         "id": 3,
-        "name": "Chicken Stir-Fry",
-        "category": "chicken",
-        "description": "A quick and healthy chicken stir-fry with colorful vegetables and a savory sauce.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
-                "quantity": "2",
-                "name": "boneless chicken breasts",
-                "type": "Meat"
+                "quantity": "2 dl",
+                "name": "vetemjöl"
             },
             {
-                "quantity": "1",
-                "name": "red bell pepper",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
             },
             {
-                "quantity": "1",
-                "name": "yellow bell pepper",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "salt"
             },
             {
-                "quantity": "1",
-                "name": "carrot",
-                "type": "Vegetables"
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
             },
             {
                 "quantity": "2",
-                "name": "garlic cloves",
-                "type": "Vegetables"
+                "name": "ägg"
+            },
+            {
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Slice the chicken and vegetables into thin strips.",
-            "Stir-fry the chicken in a hot pan until cooked through. Remove and set aside.",
-            "Stir-fry the vegetables until they start to soften.",
-            "Return the chicken to the pan, add the sauce, and cook for a few minutes.",
-            "Serve the stir-fry over rice or noodles."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "timers": [
-            0,
-            300,
-            300,
-            0,
-            0
-        ],
-        "html": "chicken_stir_fry.html",
-        "imageURL": "img/BlueberryOatmealBars.jpg"
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 4,
-        "name": "Vegetable Curry",
-        "category": "vegetarian",
-        "description": "A flavorful and aromatic vegetable curry with a blend of spices and assorted vegetables.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
-                "quantity": "2 cups",
-                "name": "mixed vegetables (e.g., potatoes, carrots, peas)",
-                "type": "Vegetables"
+                "quantity": "2 dl",
+                "name": "vetemjöl"
             },
             {
-                "quantity": "1",
-                "name": "onion",
-                "type": "Vegetables"
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
             },
             {
                 "quantity": "2",
-                "name": "tomatoes",
-                "type": "Vegetables"
+                "name": "ägg"
             },
             {
-                "quantity": "1 can",
-                "name": "coconut milk",
-                "type": "Canned Goods"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "curry powder",
-                "type": "Spices"
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Chop the vegetables and onion.",
-            "Sauté the onion until translucent, then add the tomatoes and curry powder.",
-            "Add the mixed vegetables and coconut milk. Simmer until the vegetables are tender.",
-            "Serve the vegetable curry over rice or with naan."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "timers": [
-            0,
-            300,
-            600,
-            0
-        ],
-        "html": "vegetable_curry.html",
-        "imageURL": "img/linssoppa.jpg"
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 5,
-        "name": "Salmon with Lemon-Dill Sauce",
-        "category": "seafood",
-        "description": "Pan-seared salmon fillet served with a creamy lemon-dill sauce.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
+                "quantity": "2 dl",
+                "name": "vetemjöl"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
+            },
+            {
                 "quantity": "2",
-                "name": "salmon fillets",
-                "type": "Seafood"
+                "name": "ägg"
             },
             {
-                "quantity": "1",
-                "name": "lemon",
-                "type": "Fruits"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "fresh dill",
-                "type": "Herbs"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "heavy cream",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "butter",
-                "type": "Dairy"
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Season the salmon fillets with salt and pepper.",
-            "Sear the fillets in butter until cooked to your liking.",
-            "In a separate saucepan, heat the cream, lemon juice, and dill. Simmer until slightly thickened.",
-            "Serve the salmon with the lemon-dill sauce drizzled on top."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "timers": [
-            0,
-            360,
-            600,
-            0
-        ],
-        "html": "salmon_lemon_dill.html",
-        "imageURL": "img/lax.jpg"
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 6,
-        "name": "Margherita Pizza",
-        "category": "pizza",
-        "description": "A classic Margherita pizza topped with fresh tomatoes, mozzarella, and basil leaves.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
-                "quantity": "1",
-                "name": "pizza dough",
-                "type": "Baking"
+                "quantity": "2 dl",
+                "name": "vetemjöl"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
             },
             {
                 "quantity": "2",
-                "name": "tomatoes",
-                "type": "Vegetables"
+                "name": "ägg"
             },
             {
-                "quantity": "8 ounces",
-                "name": "mozzarella cheese",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "fresh basil leaves",
-                "type": "Herbs"
-            },
-            {
-                "quantity": "2 tablespoons",
-                "name": "olive oil",
-                "type": "Condiments"
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Roll out the pizza dough to your desired thickness.",
-            "Brush the dough with olive oil and top with sliced tomatoes, mozzarella, and basil leaves.",
-            "Bake the pizza in a preheated oven until the crust is golden and the cheese is melted.",
-            "Slice and serve the Margherita pizza."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "timers": [
-            0,
-            0,
-            900,
-            0
-        ],
-        "html": "margherita_pizza.html",
-        "imageURL": "img/pizza.jpg"
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 7,
-        "name": "Berry Smoothie",
-        "category": "beverage",
-        "description": "A refreshing and nutritious smoothie made with mixed berries and yogurt.",
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
         "ingredients": [
             {
-                "quantity": "1 cup",
-                "name": "mixed berries (e.g., strawberries, blueberries, raspberries)",
-                "type": "Fruits"
+                "quantity": "2 dl",
+                "name": "vetemjöl"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "plain yogurt",
-                "type": "Dairy"
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "milk",
-                "type": "Drinks"
+                "quantity": "1/2 tsk",
+                "name": "salt"
             },
             {
-                "quantity": "1 tablespoon",
-                "name": "honey",
-                "type": "Condiments"
-            },
-            {
-                "quantity": "1/2 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
-            }
-        ],
-        "steps": [
-            "Combine the mixed berries, yogurt, milk, honey, and vanilla extract in a blender.",
-            "Blend until smooth and creamy.",
-            "Pour the berry smoothie into glasses and serve immediately."
-        ],
-        "timers": [
-            0,
-            0,
-            0
-        ],
-        "html": "berry_smoothie.html",
-        "imageURL": "img/sparris.jpg"
-    },
-    {
-        "id": 8,
-        "name": "Homemade Burgers",
-        "category": "burgers",
-        "description": "Juicy homemade burgers with all your favorite toppings.",
-        "ingredients": [
-            {
-                "quantity": "1 pound",
-                "name": "ground beef",
-                "type": "Meat"
-            },
-            {
-                "quantity": "4",
-                "name": "hamburger buns",
-                "type": "Bakery"
-            },
-            {
-                "quantity": "4 slices",
-                "name": "cheddar cheese",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "1",
-                "name": "onion",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "4 leaves",
-                "name": "lettuce",
-                "type": "Vegetables"
-            }
-        ],
-        "steps": [
-            "Divide the ground beef into 4 equal portions and shape into patties.",
-            "Grill or cook the patties on a stovetop until cooked to your preferred doneness.",
-            "Toast the hamburger buns and assemble the burgers with cheese, onion, and lettuce.",
-            "Serve the homemade burgers with your favorite condiments and sides."
-        ],
-        "timers": [
-            0,
-            600,
-            0,
-            0
-        ],
-        "html": "homemade_burgers.html",
-        "imageURL": "img/caesarsalad.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Pasta Primavera",
-        "category": "pasta",
-        "description": "A light and vibrant pasta dish with assorted spring vegetables and a lemony sauce.",
-        "ingredients": [
-            {
-                "quantity": "8 ounces",
-                "name": "pasta (e.g., spaghetti, fettuccine)",
-                "type": "Pasta"
-            },
-            {
-                "quantity": "1",
-                "name": "zucchini",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1",
-                "name": "yellow squash",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1 cup",
-                "name": "cherry tomatoes",
-                "type": "Fruits"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "fresh parsley",
-                "type": "Herbs"
-            }
-        ],
-        "steps": [
-            "Cook the pasta according to package instructions.",
-            "Sauté the zucchini, yellow squash, and cherry tomatoes until tender.",
-            "Toss the cooked pasta with the sautéed vegetables and fresh parsley.",
-            "Drizzle with olive oil and lemon juice. Season with salt and pepper."
-        ],
-        "timers": [
-            0,
-            300,
-            0,
-            0
-        ],
-        "html": "pasta_primavera.html",
-        "imageURL": "img/PastaPrimavera.jpg"
-    },
-    {
-        "id": 10,
-        "name": "Chocolate Chip Cookies",
-        "category": "dessert",
-        "description": "Classic homemade chocolate chip cookies that are chewy and delicious.",
-        "ingredients": [
-            {
-                "quantity": "1 cup",
-                "name": "butter",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "granulated sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "brown sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
             },
             {
                 "quantity": "2",
-                "name": "eggs",
-                "type": "Dairy"
+                "name": "ägg"
+            },
+            {
+                "quantity": "Lite",
+                "name": "smör (till formen)"
             }
         ],
         "steps": [
-            "Preheat the oven to 375°F (190°C).",
-            "In a large bowl, cream together the butter, granulated sugar, and brown sugar.",
-            "Beat in the vanilla and eggs.",
-            "Combine the dry ingredients in a separate bowl, then gradually add to the butter mixture.",
-            "Stir in the chocolate chips.",
-            "Drop spoonfuls of dough onto ungreased baking sheets and bake for 8-10 minutes.",
-            "Let the cookies cool on the baking sheets before transferring to a wire rack."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "timers": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            600,
-            0
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Ugnspannkaka",
+        "description": "Beskrivning av ugnspannkaka.",
+        "ingredients": [
+            {
+                "quantity": "2 dl",
+                "name": "vetemjöl"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
+                "quantity": "4 dl",
+                "name": "mjölk (3%)"
+            },
+            {
+                "quantity": "2",
+                "name": "ägg"
+            },
+            {
+                "quantity": "Lite",
+                "name": "smör (till formen)"
+            }
         ],
-        "html": "chocolate_chip_cookies.html",
-        "imageURL": "img/havre.jpg"
+        "steps": [
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
+        ],
+        "html": "recept/paella.html",
+        "time": "40 min",
+        "imageURL": "img/ugnspannkaka.jpg"
     }
-    
-
-    
-
-    
-    
-
-    
-    
-    
-    
 ]

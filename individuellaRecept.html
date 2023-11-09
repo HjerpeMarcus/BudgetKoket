@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header class="main-header">
+        <nav class="mobile-nav">
+            <span class="material-icons closeIcon">
+                close
+                </span>
+            <ul class="menuList">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+        <div id="mobile-headerMenu" class="mobile-menuIconContainer">
+            <img class="icon" src="/img/menu 1.svg">
+        </div>
+        <a href="index.html"><img class="logo" src="/img/logo_w.svg"></a>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="recept.html">
+                    Recept
+                </a></li>
+                <li><a href="omOss.html">
+                    Om Oss
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="individuellaContainer">
+        <h2 id="rubrik">Höstiga måltider</h2>
+        <div class="container">
+            <div class="topContainer">
+                <div id="imageContainer"></div>
+                <div class="descContainer">
+                    <h2 id="recipeName">Namn</h2>
+                    <p id="recipeDesc">Beskrivning</p>
+                </div>
+            </div>
+            <div class="contentContainer">
+                <div class="contentSection ingredients">
+                    <h2>Ingredienser</h2>
+                    <ul class="list" id="ingredientList"></ul>
+                </div>
+                <div class="contentSection steps">
+                    <h2>Gör så här</h2>
+                    <ol class="list" id="stepList"></ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="border-container">
+        <div class="border-image">
+        </div>
+    </div>
+    <footer id="main-footer">
+        <div class="footer-inside">
+            <img class="logo" src="/img/logo_r.svg">
+            <ul>
+                <li><a href="omOss.html">Om Oss</a></li>
+                <li><a href="recept.html">Recept</a></li>
+            </ul>
+        </footer>
+        <script src="/js/individuellaRecept.js"></script>
 </body>
 </html>
