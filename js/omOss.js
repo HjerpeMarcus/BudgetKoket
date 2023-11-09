@@ -60,10 +60,12 @@ fetch(jsonUrl)
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
             recipes = data.map(recipe => { // Använd slice() för att begränsa antalet kort
+            recipes = data.map(recipe => { // Använd slice() för att begränsa antalet kort
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
                 const desc = card.querySelector('[data-desc]');
+                card.id = recipe.id;
                 card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
