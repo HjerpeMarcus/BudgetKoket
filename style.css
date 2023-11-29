@@ -526,13 +526,8 @@ img {
 }
 @media (min-width: 700px) {
   #hero .text p {
-    padding: 1.2rem 2rem 1rem 0.5rem;
-    font-size: 6rem;
-  }
-}
-@media (min-width: 1000px) {
-  #hero .text p {
-    font-size: 6rem;
+    padding: 0.4rem 2rem 0.3rem 0.5rem;
+    font-size: 4rem;
   }
 }
 #hero .text .heroButton {
@@ -600,7 +595,7 @@ img {
 
 .tips {
   width: 100vw;
-  height: 50vh;
+  height: 400px;
   max-width: 100%;
   background-color: #a1aed1;
   position: relative;
@@ -610,7 +605,7 @@ img {
 }
 @media (min-width: 700px) {
   .tips {
-    height: 40vh;
+    height: 400px;
   }
 }
 .tips .imageChecker {
@@ -817,7 +812,7 @@ img {
   display: none;
   background-color: rgba(253, 249, 218, 0);
   position: absolute;
-  max-width: 100vw;
+  max-width: 100%;
   bottom: -56px;
   left: 0;
 }
