@@ -153,10 +153,10 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width:400px;
-  margin:auto;
+  max-width: 400px;
+  margin: auto;
   @media (min-width: $breakpoint-ipad) {
-    max-width:none;
+    max-width: none;
   }
   .card {
     position: relative;
@@ -195,22 +195,22 @@ img {
     }
     .cardLink {
       padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-      background-color:#e95e3f;
+      background-color: #e95e3f;
       border: solid 2px black;
-      box-shadow:black 2px 2px;
+      box-shadow: black 2px 2px;
       border-radius: 0.8rem;
       display: inline-flex;
       align-items: center;
       width: fit-content;
       color: black;
-      text-decoration:none;
+      text-decoration: none;
       .linkText {
         margin-right: 0.5rem;
-        font-weight:600;
-        color:white;
+        font-weight: 600;
+        color: white;
       }
-      .linkIcon{
-        color:white;
+      .linkIcon {
+        color: white;
       }
     }
     &.hide {
@@ -225,8 +225,8 @@ img {
   padding: 0.5rem 0 0.2rem 0;
   width: 100vw;
   max-width: 100%;
-  background-color:#fdf26d;
-  border-bottom:solid black 5px;
+  background-color: #fdf26d;
+  border-bottom: solid black 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -243,8 +243,8 @@ img {
     padding-right: 5vw;
     padding-left: 5vw;
     padding-top: 0.5rem;
-    background-image:none;
-    background-color:#fdf26d
+    background-image: none;
+    background-color: #fdf26d;
   }
   .mobile-nav {
     height: 100vh;
@@ -300,13 +300,13 @@ img {
     position: absolute;
     left: 20px;
     top: 25%;
-    background-color:#e95e3f;
-    border:black solid 2px;
-    box-shadow:black 1px 1px;
-    border-radius:8px;
-    padding:0.5rem;
-    .icon{
-      width:30px;
+    background-color: #e95e3f;
+    border: black solid 2px;
+    box-shadow: black 1px 1px;
+    border-radius: 8px;
+    padding: 0.5rem;
+    .icon {
+      width: 30px;
     }
     @media (min-width: $breakpoint-ipad) {
       display: none;
@@ -323,21 +323,21 @@ img {
       display: flex;
       flex: 0 0 100%;
       justify-content: flex-end;
-      &:first-child{
-        a{
-          margin-right:1rem;
+      &:first-child {
+        a {
+          margin-right: 1rem;
         }
       }
       li {
         a {
           color: white;
           font-size: 1.4rem;
-          background-color:#e95e3f;
-          padding:0.5rem 1rem 0.5rem 1rem;
-          border:solid black 2px;
+          background-color: #e95e3f;
+          padding: 0.5rem 1rem 0.5rem 1rem;
+          border: solid black 2px;
           box-shadow: black 3px 4px;
-          border-radius:20px;
-          text-decoration:none;
+          border-radius: 20px;
+          text-decoration: none;
         }
       }
     }
@@ -395,7 +395,7 @@ img {
       font-size: 1.5rem;
       font-weight: 600;
       color: white;
-      text-decoration:none;
+      text-decoration: none;
       @media (min-width: $breakpoint-ipad) {
         // position: absolute;
         // bottom: 1rem;
@@ -429,14 +429,25 @@ img {
         flex: 0 0 70%;
         margin-left: 2rem;
       }
+      .cookietagg {
+        display: flex;
+        justify-content: center;
+        .cookie-settings-button {
+          background-color: transparent;
+          border: none;
+          font-family: "Bungee Inline", sans-serif;
+          font-size: 1.5rem;
+        }
+      }
       li {
+        font-family: "Bungee Inline", sans-serif;
+
         a {
           display: block;
           text-align: center;
           font-size: 1.5rem;
           margin-top: 1rem;
           color: #ff5b03;
-          font-family: "Bungee Inline", sans-serif;
           @media (min-width: $breakpoint-ipad) {
             display: inline-block;
             margin: 0 0 0 3rem;
@@ -458,12 +469,12 @@ img {
   @media (min-width: $breakpoint-ipad) {
     height: 400px;
   }
-  .imageChecker{
-    height:50px;
-    width:50px;
-    position:absolute;
-    top:0px;
-    left:10px;
+  .imageChecker {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 0px;
+    left: 10px;
   }
   .tipsImage {
     width: 50vw;
@@ -472,7 +483,7 @@ img {
     animation: rotation 3s infinite linear;
     position: absolute;
     transition: left 1s ease-out, right 1s ease-out;
-    @media(min-width: $breakpoint-ipad){
+    @media (min-width: $breakpoint-ipad) {
       transition: left 1.7s ease-out, right 1.7s ease-out;
     }
     &.banana {
@@ -495,11 +506,11 @@ img {
       width: 45vw;
       &.animation {
         right: -10vw;
-        @media(min-width: $breakpoint-ipad){
-          width:28vw;
-          right:0vw;
-          bottom:2vh;
-        };
+        @media (min-width: $breakpoint-ipad) {
+          width: 28vw;
+          right: 0vw;
+          bottom: 2vh;
+        }
       }
     }
     @keyframes rotation {
@@ -525,17 +536,17 @@ img {
     background-color: white;
     padding: 2rem;
     width: 50vw;
-    max-width:525px;
+    max-width: 525px;
     min-height: 130px;
     border-radius: 32px;
     position: absolute;
     font-size: 0.8rem;
     font-weight: bold;
     transition: left 1s ease-out, right 1s ease-out;
-    @media(min-width:450px){
-      font-size:1rem;
+    @media (min-width: 450px) {
+      font-size: 1rem;
     }
-    @media(min-width: $breakpoint-ipad){
+    @media (min-width: $breakpoint-ipad) {
       transition: left 1.6s ease-out, right 1.6s ease-out;
     }
     &.bubble1 {
@@ -636,17 +647,17 @@ img {
       }
     }
   }
-  &.header{
-    display:none;
+  &.header {
+    display: none;
     background-color: #fdf9da00;
-    position:absolute;
-    max-width:100%;
-    bottom:-56px;
-    left:0;
-    @media(min-width: $breakpoint-ipad){
-      display:block;
+    position: absolute;
+    max-width: 100%;
+    bottom: -56px;
+    left: 0;
+    @media (min-width: $breakpoint-ipad) {
+      display: block;
     }
-    .border-image{
+    .border-image {
       background: url("/img/border-down.png") repeat-x;
     }
   }
@@ -663,11 +674,11 @@ img {
   .siteHeading {
     display: flex;
     justify-content: center;
-    padding-top:3rem;
-    padding-bottom:0;
-    font-size:3rem;
-    max-height:10rem;
-    color:#4c560f;
+    padding-top: 3rem;
+    padding-bottom: 0;
+    font-size: 3rem;
+    max-height: 10rem;
+    color: #4c560f;
   }
 }
 #aboutUsTextConatiner {
@@ -725,13 +736,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width:420px;
-  margin:auto;
-  @media(min-width: $breakpoint-ipad){
-    max-width:920px;
+  max-width: 420px;
+  margin: auto;
+  @media (min-width: $breakpoint-ipad) {
+    max-width: 920px;
   }
   @media (min-width: $breakpoint-desktop) {
-    max-width:1500px;
+    max-width: 1500px;
   }
   &:after {
     content: "";
@@ -775,18 +786,18 @@ img {
     }
     .cardLink {
       padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-      background-color:#e95e3f;
+      background-color: #e95e3f;
       border: solid 2px black;
       border-radius: 0.8rem;
       display: inline-flex;
       align-items: center;
       width: fit-content;
       color: black;
-      text-decoration:none;
+      text-decoration: none;
       .linkText {
         margin-right: 0.5rem;
-        font-weight:600;
-        color:white;
+        font-weight: 600;
+        color: white;
       }
     }
     &.hide {
@@ -861,16 +872,16 @@ img {
         flex: 0 0 35%;
       }
     }
-    #ingredientList{
-      list-style:none;
-      li{
-        margin-bottom:0.5rem;
+    #ingredientList {
+      list-style: none;
+      li {
+        margin-bottom: 0.5rem;
       }
     }
-    #stepList{
-      list-style:none;
-      li{
-        margin-bottom:1rem;
+    #stepList {
+      list-style: none;
+      li {
+        margin-bottom: 1rem;
       }
     }
   }
