@@ -20,37 +20,58 @@
       href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div id="cookie-popup" class="cookie-popup">
+      <div class="popup-content">
+        <span id="close-icon" class="close-icon">×</span>
+        <h2>Vi använder kakor</h2>
+        <p>
+          Vi använder kakor för att göra ett så bra material som möjligt för
+          sidan. Allting som samlas in är till för att förbättra upplevelsen på
+          sidan och för att skapa ett så bra lärande material som möjligt.
+        </p>
+        <div class="cookie-switch-container">
+          <span id="cookie-status" class="cookie-status">Kakinställningar</span>
+          <label class="switch">
+            <input type="checkbox" id="cookie-switch" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <button id="only-necessary-button" style="display: none">
+          Bara nödvändiga
+        </button>
+        <button id="ok-button" style="display: none">Ok</button>
+        <div class="b">
+          <a href="privacy-policy.php" class="integrity">Integritetspolicy</a>
+        </div>
+      </div>
+    </div>
     <div class="omOssBody">
       <header class="main-header">
         <nav class="mobile-nav">
-            <span class="material-icons closeIcon">
-                close
-                </span>
-            <ul class="menuList">
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="recept.html">Recept</a></li>
-                <li><a href="omOss.html">Om</a></li>
-            </ul>
+          <span class="material-icons closeIcon">close</span>
+          <ul class="menuList">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="recept.html">Recept</a></li>
+            <li><a href="omOss.html">Om</a></li>
+          </ul>
         </nav>
         <div id="mobile-headerMenu" class="mobile-menuIconContainer">
-            <img class="icon" src="/img/menu 1.svg">
+          <img class="icon" src="/img/menu 1.svg" />
         </div>
-        <a href="index.html"><img class="logo" src="/img/logo_w.svg"></a>
+        <a href="index.html"><img class="logo" src="/img/logo_r.svg" /></a>
         <nav class="desktop-nav">
-            <ul>
-                <li><a href="recept.html">
-                    Recept
-                </a></li>
-                <li><a href="omOss.html">
-                    Om Oss
-                </a></li>
-            </ul>
+          <ul>
+            <li><a href="recept.html"> Recept </a></li>
+            <li><a href="omOss.html"> Om Oss </a></li>
+          </ul>
         </nav>
-    </header>
+        <div class="border-container header">
+          <div class="border-image header"></div>
+        </div>
+      </header>
       <section id="headerText">
         <div class="emptyBox"></div>
         <div class="siteHeading">
@@ -64,38 +85,54 @@
             <img src="" alt="" />
             <article class="aboutUsText">
               <h2>Hej</h2>
-              <p>Vi är 3 studenter som heter Fim, Marcus & Alicia som är grundaren av ALMAFI.</p>
-              <p>studerar digital design på Brobygrafiska. Vi har skapat denna sida för att vi ser ett behov av lätta & billiga recept.</p>
+              <p>
+                Vi är 3 studenter som heter Fim, Marcus & Alicia som är
+                grundaren av ALMAFI.
+              </p>
+              <p>
+                studerar digital design på Brobygrafiska. Vi har skapat denna
+                sida för att vi ser ett behov av lätta & billiga recept.
+              </p>
             </article>
           </div>
         </section>
       </main>
       <section class="teamContainer">
-        <h3>Vårat team</h3>
-        <div class="teamPic"> 
-          <div class="personPic">
-            <img src="img/lax.jpg" alt="Alicia" />
-          </div>
-          <div class="personPic">
-            <img src="img/lax.jpg" alt="Alicia" />
-          </div>
-          <div class="personPic">
-            <img src="img/lax.jpg" alt="Alicia" />
-          </div>
+        <h2>Vårat Team</h2>
+        <div class="teamPic">
+          <figure>
+            <img src="img/Fim.jpg" alt="Fim" class="picture" />
+            <figcaption>Fim "Unicorn"</figcaption>
+          </figure>
+          <figure>
+            <img src="img/Markus.jpg" alt="Markus" class="picture" />
+            <figcaption>Markus "Code Master"</figcaption>
+          </figure>
+          <figure>
+            <img src="img/Alicia.png" alt="Alicia" class="picture" />
+            <figcaption>Alicia "Design"</figcaption>
+          </figure>
         </div>
       </section>
       <div class="border-container">
-        <div class="border-image">
-        </div>
-    </div>
+        <div class="border-image"></div>
+      </div>
       <footer id="main-footer">
         <div class="footer-inside">
-            <img class="logo" src="/img/logo_r.svg">
-            <ul>
-                <li><a href="omOss.html">Om Oss</a></li>
-                <li><a href="recept.html">Recept</a></li>
-            </ul>
-        </footer>
+          <img class="logo" src="/img/logo_r.svg" />
+          <ul>
+            <li><a href="omOss.html">Hem</a></li>
+            <li><a href="recept.html">Recept</a></li>
+            <li><a href="omOss.html">Om Oss</a></li>
+          </ul>
+        </div>
+        <div class="cookieSettings">
+          <button id="cookie-settings-button" class="cookie-settings-button">
+            Kakinställningar
+          </button>
+          <a href="privacy-policy.html">Integritetspolicy</a>
+        </div>
+      </footer>
     </div>
     <script src="js/omOss.js"></script>
   </body>

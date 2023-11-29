@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>untitle</title>
+    <title>Almafi</title>
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -52,23 +52,29 @@
     </div>
     <header class="main-header">
       <nav class="mobile-nav">
-        <span class="material-icons closeIcon"> close </span>
+        <div class="menuHeader">
+          <span class="material-icons closeIcon"> close </span>
+          <a href="index.html"><img class="logo" src="/img/Logogreen.svg" /></a>
+        </div>
         <ul class="menuList">
           <li><a href="index.html">Hem</a></li>
           <li><a href="recept.html">Recept</a></li>
-          <li><a href="omOss.html">Om</a></li>
+          <li><a href="omOss.html">Om oss</a></li>
         </ul>
       </nav>
       <div id="mobile-headerMenu" class="mobile-menuIconContainer">
         <img class="icon" src="/img/menu 1.svg" />
       </div>
-      <a href="index.html"><img class="logo" src="/img/logo_w.svg" /></a>
+      <a href="index.html"><img class="logo" src="/img/logo_r.svg" /></a>
       <nav class="desktop-nav">
         <ul>
           <li><a href="recept.html"> Recept </a></li>
           <li><a href="omOss.html"> Om Oss </a></li>
         </ul>
       </nav>
+      <div class="border-container header">
+        <div class="border-image header"></div>
+      </div>
     </header>
     <section id="hero">
       <div class="text">
@@ -108,16 +114,15 @@
         </div>
       </section>
       <section class="tips">
+        <div class="imageChecker"></div>
         <img class="tipsImage banana" src="/img/banana.svg" />
         <div class="speechBubble bubble1">
           <div class="bubbleChecker1"></div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          cursus diam turpis. Etiam dignissim velit vitae.
+          Superenkla recept! Rekommenderar starkt!
         </div>
         <div class="speechBubble bubble2">
           <div class="bubbleChecker2"></div>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          cursus diam turpis. Etiam dignissim velit.
+          Hur gott som helst, och såååå billigt!
         </div>
         <img class="tipsImage cherry" src="/img/cherries.svg" />
       </section>
@@ -136,25 +141,24 @@
           </template>
         </div>
       </section>
-      <section class="tips teamContainer">
+      <!--<section class="teamContainer">
         <h2>Vårat Team</h2>
         <div class="teamPic">
           <figure>
             <img src="img/Fim.jpg" alt="Fim" class="picture" />
-            <figcaption>Fim</figcaption>
+            <figcaption>Fim "Unicorn"</figcaption>
           </figure>
           <figure>
             <img src="img/Markus.jpg" alt="Markus" class="picture" />
-            <figcaption>Markus</figcaption>
+            <figcaption>Markus "Code Master"</figcaption>
           </figure>
           <figure>
-            <img src="img/Markus.jpg" alt="Markus" class="picture" />
-            <figcaption>Markus</figcaption>
+            <img src="img/Alicia.png" alt="Alicia" class="picture" />
+            <figcaption>Alicia "Design"</figcaption>
           </figure>
         </div>
-      </section>
+      </section>-->
     </main>
-
     <div class="border-container">
       <div class="border-image"></div>
     </div>
@@ -162,16 +166,18 @@
       <div class="footer-inside">
         <img class="logo" src="/img/logo_r.svg" />
         <ul>
-          <li><a href="omOss.html">Om Oss</a></li>
+          <li><a href="omOss.html">Hem</a></li>
           <li><a href="recept.html">Recept</a></li>
+          <li><a href="omOss.html">Om Oss</a></li>
         </ul>
       </div>
-      <button id="cookie-settings-button" class="cookie-settings-button">
-        Kakinställningar
-      </button>
-      <a href="privacy-policy.html">Integritetspolicy</a>
+      <div class="cookieSettings">
+        <button id="cookie-settings-button" class="cookie-settings-button">
+          Kakinställningar
+        </button>
+        <a href="privacy-policy.html">Integritetspolicy</a>
+      </div>
     </footer>
-
     <script src="/js/script.js"></script>
   </body>
 </html>

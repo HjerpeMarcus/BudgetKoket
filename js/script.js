@@ -108,25 +108,22 @@ function wait(ms) {
 const imageObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            wait(500).then(() =>
-                entry.target.classList.add('animation')
-            )
+            wait(0).then(() =>
+                document.querySelector('.banana').classList.add('animation')
+            );
+            wait(600).then(() =>
+            document.querySelector('.bubble1').classList.add('animation')
+            );
+            wait(800).then(() =>
+            document.querySelector('.cherry').classList.add('animation')
+            );
+            wait(1400).then(() =>
+            document.querySelector('.bubble2').classList.add('animation')
+            );
       }
     })
   });
-  const bubbleObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            wait(1000).then(() =>
-                entry.target.parentElement.classList.add('animation')
-            )
-      }
-    })
-  });
-  imageObserver.observe(document.querySelector('.banana'));
-  bubbleObserver.observe(document.querySelector('.bubbleChecker1'));
-  bubbleObserver.observe(document.querySelector('.bubbleChecker2'));
-  imageObserver.observe(document.querySelector('.cherry'));
+  imageObserver.observe(document.querySelector('.imageChecker'));
 //header-knappar
 const menuButtonRef = document.querySelector('#mobile-headerMenu');
 const searchButtonRef = document.querySelector('#mobile-searchIcon');

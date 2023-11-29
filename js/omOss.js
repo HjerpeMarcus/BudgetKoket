@@ -60,12 +60,10 @@ fetch(jsonUrl)
         //Detta kan göras snyggare
         dataUserPopuar.forEach(section => {
             recipes = data.map(recipe => { // Använd slice() för att begränsa antalet kort
-            recipes = data.map(recipe => { // Använd slice() för att begränsa antalet kort
                 const card = dataUserTemplate.content.cloneNode(true).children[0];
                 const header = card.querySelector('[data-header]');
                 const img = card.querySelector('[data-image]');
                 const desc = card.querySelector('[data-desc]');
-                card.id = recipe.id;
                 card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
@@ -137,6 +135,7 @@ menuButtonRef.addEventListener("click", function(){
 closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
 });
+//kort-länkar
 document.body.addEventListener( 'click', function ( event ) {
     if(event.target.classList.contains('linkListener')){
             sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
