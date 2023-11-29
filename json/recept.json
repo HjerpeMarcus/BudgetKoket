@@ -1,73 +1,28 @@
 [
     {
         "id": 1,
-        "name": "Zeinas paella med kyckling och räkor",
-        "category": "Spanskt",
-        "description": "Zeinas goda variant på den klassiska spanska paellan med ris, saffran, kyckling, räkor och ärtor. En utmärkt festrätt där allt smidigt lagas i en och samma panna.",
+        "name": "Ugnspannakaka",
+        "description": "Saftig och luftig ugnspannkaka när den är som bäst. Enkelt recept på klassisk ugnspannkaka som toppas med vispad grädde och sylt. Den här ugnspannkakan passar lika bra till vardagsmiddagen som till efterrätt eller mellanmål.",
         "ingredients": [
             {
+                "quantity": "2 dl",
+                "name": "vetemjöl"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "strösocker"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "salt"
+            },
+            {
                 "quantity": "4 dl",
-                "name": "risottoris (eller paellaris)"
+                "name": "mjölk (3%)"
             },
             {
-                "quantity": "1 st",
-                "name": "gul lök"
-            },
-            {
-                "quantity": "1 st",
-                "name": "röd paprika"
-            },
-            {
-                "quantity": "4 klyftor",
-                "name": "vitlök"
-            },
-            {
-                "quantity": "400 g",
-                "name": "krossade tomater"
-            },
-            {
-                "quantity": "3 st",
-                "name": "majskycklinglårfilé"
-            },
-            {
-                "quantity": "100 g",
-                "name": "räkor med skal"
-            },
-            {
-                "quantity": "60 g",
-                "name": "frysta ärtor"
-            },
-            {
-                "quantity": "1 g",
-                "name": "saffran"
-            },
-            {
-                "quantity": "2 tsk",
-                "name": "paprikapulver"
-            },
-            {
-                "quantity": "1 liter",
-                "name": "vatten"
-            },
-            {
-                "quantity": "2 st",
-                "name": "fiskbuljongtärningar"
-            },
-            {
-                "quantity": "1 st",
-                "name": "citron"
-            },
-            {
-                "quantity": "1 dl",
-                "name": "olivolja"
-            },
-            {
-                "quantity": "",
-                "name": "Salt"
-            },
-            {
-                "quantity": "",
-                "name": "Peppar"
+                "quantity": "2",
+                "name": "ägg"
             }
         ],
         "steps": [

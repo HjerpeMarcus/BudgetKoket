@@ -354,6 +354,7 @@ img {
 }
 .popular-cards .card .cardLink {
   padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  background-color: #e95e3f;
   border: solid 2px black;
   box-shadow: black 2px 2px;
   border-radius: 0.8rem;
@@ -366,6 +367,11 @@ img {
 }
 .popular-cards .card .cardLink .linkText {
   margin-right: 0.5rem;
+  font-weight: 600;
+  color: white;
+}
+.popular-cards .card .cardLink .linkIcon {
+  color: white;
 }
 .popular-cards .card.hide {
   display: none;
@@ -962,6 +968,7 @@ img {
 }
 .recept-cards .card .cardLink {
   padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  background-color: #e95e3f;
   border: solid 2px black;
   border-radius: 0.8rem;
   display: inline-flex;
@@ -973,6 +980,8 @@ img {
 }
 .recept-cards .card .cardLink .linkText {
   margin-right: 0.5rem;
+  font-weight: 600;
+  color: white;
 }
 .recept-cards .card.hide {
   display: none;
@@ -1052,6 +1061,18 @@ img {
 }
 .individuellaContainer .container .contentContainer .contentSection {
   flex: 0 0 35%;
+}
+.individuellaContainer .container #ingredientList {
+  list-style: none;
+}
+.individuellaContainer .container #ingredientList li {
+  margin-bottom: 0.5rem;
+}
+.individuellaContainer .container #stepList {
+  list-style: none;
+}
+.individuellaContainer .container #stepList li {
+  margin-bottom: 1rem;
 }
 
 .teamContainer {
