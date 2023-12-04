@@ -584,13 +584,25 @@ img {
     margin-left: 2rem;
   }
 }
+#main-footer .footer-inside ul .cookietagg {
+  display: flex;
+  justify-content: center;
+}
+#main-footer .footer-inside ul .cookietagg .cookie-settings-button {
+  background-color: transparent;
+  border: none;
+  font-family: "Bungee Inline", sans-serif;
+  font-size: 1.5rem;
+}
+#main-footer .footer-inside ul li {
+  font-family: "Bungee Inline", sans-serif;
+}
 #main-footer .footer-inside ul li a {
   display: block;
   text-align: center;
   font-size: 1.5rem;
   margin-top: 1rem;
   color: #ff5b03;
-  font-family: "Bungee Inline", sans-serif;
 }
 @media (min-width: 700px) {
   #main-footer .footer-inside ul li a {
