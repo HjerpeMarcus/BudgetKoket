@@ -35,9 +35,6 @@
             Bara nödvändiga
           </button>
           <button id="ok-button" style="display: none">Ok</button>
-          <div class="b">
-            <a href="privacy-policy.php" class="integrity">Integritetspolicy</a>
-          </div>
         </div>
       </div>
     <header class="main-header">
@@ -91,19 +88,31 @@
             </div>
         </div>
     </main>
+    <div class="border-container">
+        <div class="border-image"></div>
+      </div>
     <footer id="main-footer">
         <div class="footer-inside">
-            <img class="logo" src="/img/logo_r.svg">
-            <ul>
-                <li><a href="index.html">Hem</a></li>
-                <li><a href="recept.html">Recept</a></li>
-                <li><a href="omOss.html">Om Oss</a></li>
-              </ul>
-            <button id="cookie-settings-button" class="cookie-settings-button">
+          <img class="logo" src="/img/logo_r.svg" />
+          <ul>
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="recept.html">Recept</a></li>
+            <li><a href="omOss.html">Om Oss</a></li>
+            <li class="cookietagg">
+              <button id="cookie-settings-button" class="cookie-settings-button">
                 Kakinställningar
               </button>
-              <a href="privacy-policy.html">Integritetspolicy</a>
-        </footer>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="cookieSettings">
+          <button id="cookie-settings-button" class="cookie-settings-button">
+            Kakinställningar
+          </button>
+          <a href="privacy-policy.html">Integritetspolicy</a>
+        </div> -->
+      </footer>
+      <script src="/js/cookie-consent.js"></script>
         <script src="/js/individuellaRecept.js"></script>
 </body>
 </html>

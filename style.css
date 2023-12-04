@@ -311,74 +311,6 @@ img {
     max-width: none;
   }
 }
-.popular-cards .card {
-  position: relative;
-  height: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 98%;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width: 700px) {
-  .popular-cards .card {
-    flex: 0 0 48%;
-  }
-}
-@media (min-width: 1300px) {
-  .popular-cards .card {
-    flex: 0 0 24%;
-  }
-}
-.popular-cards .card .imageContainer {
-  height: 200px;
-}
-.popular-cards .card .imageContainer img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.popular-cards .card .cardHeader {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.popular-cards .card .cardDesc {
-  margin-bottom: 1rem;
-}
-.popular-cards .card .cardLink {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  background-color: #e95e3f;
-  border: solid 2px black;
-  box-shadow: black 2px 2px;
-  border-radius: 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-  text-decoration: none;
-}
-.popular-cards .card .cardLink .linkText {
-  margin-right: 0.5rem;
-  font-weight: 600;
-  color: white;
-}
-.popular-cards .card .cardLink .linkIcon {
-  color: white;
-}
-.popular-cards .card.hide {
-  display: none;
-}
-.popular-cards .card:last-child {
-  margin-bottom: 0;
-}
 
 .main-header {
   padding: 0.5rem 0 0.2rem 0;
@@ -593,6 +525,10 @@ img {
   border: none;
   font-family: "Bungee Inline", sans-serif;
   font-size: 1.5rem;
+  margin-left: 3rem;
+  color: #ff5b03;
+  text-decoration: underline;
+  cursor: pointer;
 }
 #main-footer .footer-inside ul li {
   font-family: "Bungee Inline", sans-serif;
@@ -937,71 +873,12 @@ img {
   flex: 1 1 100%;
   max-width: 49%;
 }
-.recept-cards .card {
-  position: relative;
-  height: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 98%;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width: 700px) {
-  .recept-cards .card {
-    flex: 0 0 48%;
-  }
-}
-@media (min-width: 1300px) {
-  .recept-cards .card {
-    flex: 0 0 24%;
-  }
-}
-.recept-cards .card .imageContainer {
-  height: 200px;
-}
-.recept-cards .card .imageContainer img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.recept-cards .card .cardHeader {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.recept-cards .card .cardDesc {
-  margin-bottom: 1rem;
-}
-.recept-cards .card .cardLink {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  background-color: #e95e3f;
-  border: solid 2px black;
-  border-radius: 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-  text-decoration: none;
-}
-.recept-cards .card .cardLink .linkText {
-  margin-right: 0.5rem;
-  font-weight: 600;
-  color: white;
-}
-.recept-cards .card.hide {
-  display: none;
-}
-.recept-cards .card:last-child {
-  margin-bottom: 0;
-}
 
+.individuellaContainer {
+  margin-bottom: 2rem;
+  max-width: 1350px;
+  margin: auto;
+}
 .individuellaContainer #rubrik {
   color: #4c560f;
   font-size: 1.8rem;
@@ -1106,4 +983,73 @@ img {
 }
 .teamContainer .teamPic figure figcaption {
   margin: 0.5rem 1rem;
+}
+
+.card {
+  position: relative;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 98%;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+  background-color: white;
+}
+@media (min-width: 700px) {
+  .card {
+    flex: 0 0 48%;
+  }
+}
+@media (min-width: 1300px) {
+  .card {
+    flex: 0 0 24%;
+  }
+}
+.card .imageContainer {
+  height: 200px;
+}
+.card .imageContainer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .cardHeader {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.card .cardDesc {
+  margin-bottom: 1rem;
+}
+.card .cardLink {
+  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  background-color: #e95e3f;
+  border: solid 2px black;
+  box-shadow: black 2px 2px;
+  border-radius: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+.card .cardLink .linkText {
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: white;
+}
+.card .cardLink .linkIcon {
+  color: white;
+}
+.card.hide {
+  display: none;
+}
+.card:last-child {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

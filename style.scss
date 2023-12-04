@@ -158,68 +158,6 @@ img {
   @media (min-width: $breakpoint-ipad) {
     max-width: none;
   }
-  .card {
-    position: relative;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 0 0 98%;
-    margin-bottom: 2rem;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    border: solid 2px black;
-    box-shadow: black 3px 3px;
-    overflow: hidden;
-    background-color: white;
-    @media (min-width: $breakpoint-ipad) {
-      flex: 0 0 48%;
-    }
-    @media (min-width: $breakpoint-desktop) {
-      flex: 0 0 24%;
-    }
-    .imageContainer {
-      height: 200px;
-      img {
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .cardHeader {
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 0.5rem 0 0.5rem 0;
-    }
-    .cardDesc {
-      margin-bottom: 1rem;
-    }
-    .cardLink {
-      padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-      background-color: #e95e3f;
-      border: solid 2px black;
-      box-shadow: black 2px 2px;
-      border-radius: 0.8rem;
-      display: inline-flex;
-      align-items: center;
-      width: fit-content;
-      color: black;
-      text-decoration: none;
-      .linkText {
-        margin-right: 0.5rem;
-        font-weight: 600;
-        color: white;
-      }
-      .linkIcon {
-        color: white;
-      }
-    }
-    &.hide {
-      display: none;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 .main-header {
   padding: 0.5rem 0 0.2rem 0;
@@ -437,11 +375,14 @@ img {
           border: none;
           font-family: "Bungee Inline", sans-serif;
           font-size: 1.5rem;
+          margin-left:3rem;
+          color:#ff5b03;
+          text-decoration: underline;
+          cursor:pointer;
         }
       }
       li {
         font-family: "Bungee Inline", sans-serif;
-
         a {
           display: block;
           text-align: center;
@@ -627,7 +568,6 @@ img {
     }
   }
 }
-
 .border-container {
   background-color: #fdf9da;
   overflow: hidden;
@@ -662,7 +602,6 @@ img {
     }
   }
 }
-
 #headerText {
   color: #4c560f;
   background-color: #fdf9da;
@@ -699,7 +638,6 @@ img {
     }
   }
 }
-
 .teamContainer {
   background-color: #a1aed1;
   h2 {
@@ -749,66 +687,11 @@ img {
     flex: 1 1 100%;
     max-width: 49%;
   }
-  .card {
-    position: relative;
-    height: 540px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 0 0 98%;
-    margin-bottom: 2rem;
-    border-radius: 1.5rem;
-    padding: 1.5rem;
-    border: solid 2px black;
-    box-shadow: black 3px 3px;
-    overflow: hidden;
-    background-color: white;
-    @media (min-width: $breakpoint-ipad) {
-      flex: 0 0 48%;
-    }
-    @media (min-width: $breakpoint-desktop) {
-      flex: 0 0 24%;
-    }
-    .imageContainer {
-      height: 200px;
-      img {
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-    .cardHeader {
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 0.5rem 0 0.5rem 0;
-    }
-    .cardDesc {
-      margin-bottom: 1rem;
-    }
-    .cardLink {
-      padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-      background-color: #e95e3f;
-      border: solid 2px black;
-      border-radius: 0.8rem;
-      display: inline-flex;
-      align-items: center;
-      width: fit-content;
-      color: black;
-      text-decoration: none;
-      .linkText {
-        margin-right: 0.5rem;
-        font-weight: 600;
-        color: white;
-      }
-    }
-    &.hide {
-      display: none;
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
 }
 .individuellaContainer {
+  margin-bottom:2rem;
+  max-width:1350px;
+  margin:auto;
   #rubrik {
     color: #4c560f;
     font-size: 1.8rem;
@@ -822,7 +705,6 @@ img {
   }
   .container {
     padding: 1rem;
-
     .topContainer {
       @media (min-width: $breakpoint-ipad) {
         display: flex;
@@ -886,7 +768,6 @@ img {
     }
   }
 }
-
 .teamContainer {
   padding: 1.5rem;
   h2 {
@@ -908,5 +789,67 @@ img {
         margin: 0.5rem 1rem;
       }
     }
+  }
+}
+.card {
+  position: relative;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 98%;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  overflow: hidden;
+  background-color: white;
+  @media (min-width: $breakpoint-ipad) {
+    flex: 0 0 48%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    flex: 0 0 24%;
+  }
+  .imageContainer {
+    height: 200px;
+    img {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .cardHeader {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+  .cardDesc {
+    margin-bottom: 1rem;
+  }
+  .cardLink {
+    padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+    background-color: #e95e3f;
+    border: solid 2px black;
+    box-shadow: black 2px 2px;
+    border-radius: 0.8rem;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    color: black;
+    text-decoration: none;
+    .linkText {
+      margin-right: 0.5rem;
+      font-weight: 600;
+      color: white;
+    }
+    .linkIcon {
+      color: white;
+    }
+  }
+  &.hide {
+    display: none;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
 }
