@@ -375,10 +375,10 @@ img {
           border: none;
           font-family: "Bungee Inline", sans-serif;
           font-size: 1.5rem;
-          margin-left:3rem;
-          color:#ff5b03;
+          margin-left: 3rem;
+          color: #ff5b03;
           text-decoration: underline;
-          cursor:pointer;
+          cursor: pointer;
         }
       }
       li {
@@ -389,9 +389,15 @@ img {
           font-size: 1.5rem;
           margin-top: 1rem;
           color: #ff5b03;
+          text-decoration: none;
           @media (min-width: $breakpoint-ipad) {
             display: inline-block;
             margin: 0 0 0 3rem;
+          }
+        }
+        &.cookietagg {
+          .cookie-settings-button {
+            text-decoration: none;
           }
         }
       }
@@ -689,9 +695,9 @@ img {
   }
 }
 .individuellaContainer {
-  margin-bottom:2rem;
-  max-width:1350px;
-  margin:auto;
+  margin-bottom: 2rem;
+  max-width: 1350px;
+  margin: auto;
   #rubrik {
     color: #4c560f;
     font-size: 1.8rem;

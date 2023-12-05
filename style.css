@@ -49,14 +49,24 @@ h2 {
 .cookie-popup .popup-content p {
   margin: 20px 0;
 }
-.cookie-popup .popup-content #only-necessary-button {
+.cookie-popup .popup-content .kakPopup {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.cookie-popup .popup-content .kakPopup #only-necessary-button {
   border: none;
+  background-color: grey;
+  padding: 0.5rem;
+  border: 1px solid black;
 }
-.cookie-popup .popup-content #ok-button {
+.cookie-popup .popup-content .kakPopup #ok-button {
   background-color: #fac000;
+  padding: 0.5rem;
+  width: 100px;
 }
-.cookie-popup .popup-content #ok-button:hover {
-  background-color: #e0ab00;
+.cookie-popup .popup-content .kakPopup #ok-button:hover {
+  background-color: #bd9a26;
 }
 .cookie-popup .popup-content .b {
   text-align: center;
@@ -539,12 +549,16 @@ img {
   font-size: 1.5rem;
   margin-top: 1rem;
   color: #ff5b03;
+  text-decoration: none;
 }
 @media (min-width: 700px) {
   #main-footer .footer-inside ul li a {
     display: inline-block;
     margin: 0 0 0 3rem;
   }
+}
+#main-footer .footer-inside ul li.cookietagg .cookie-settings-button {
+  text-decoration: none;
 }
 
 .tips {
