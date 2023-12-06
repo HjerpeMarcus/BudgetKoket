@@ -37,6 +37,7 @@ img {
 .cardContainer {
   @media (min-width: $breakpoint-desktop) {
     max-width: 1400px;
+    margin:auto;
   }
 }
 .container {

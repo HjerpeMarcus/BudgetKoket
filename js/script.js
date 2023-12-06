@@ -140,7 +140,9 @@ closeButtonRef.addEventListener("click", function(){
 });
 //kort-länkar
 document.body.addEventListener( 'click', function ( event ) {
+    event.preventDefault();
     if(event.target.classList.contains('linkListener')){
-            sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
+        const recipeID = event.target.closest(".card").id;
+        window.location.href = `individuellaRecept.html?recipe=${recipeID}`;
     };
   } );
