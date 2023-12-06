@@ -673,7 +673,6 @@ img {
 .recept-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 420px;
   margin: auto;
   @media (min-width: $breakpoint-ipad) {
@@ -682,10 +681,15 @@ img {
   @media (min-width: $breakpoint-desktop) {
     max-width: 1500px;
   }
-  &:after {
-    content: "";
-    flex: 1 1 100%;
-    max-width: 49%;
+  .card{
+    @media (min-width: $breakpoint-ipad) {
+      margin-right:1%;
+      margin-left:1%;
+    }
+    @media (min-width: $breakpoint-desktop) {
+      margin-right:0.5%;
+      margin-left:0.5%;
+    }
   }
 }
 .individuellaContainer {
@@ -813,6 +817,8 @@ img {
   }
   .imageContainer {
     height: 200px;
+    border:solid black 2px;
+    box-shadow: black 3px 3px;
     img {
       height: 100%;
       object-fit: cover;

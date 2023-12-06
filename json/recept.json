@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Ugnspannakaka",
-        "description": "Saftig och luftig ugnspannkaka när den är som bäst. Enkelt recept på klassisk ugnspannkaka som toppas med vispad grädde och sylt. Den här ugnspannkakan passar lika bra till vardagsmiddagen som till efterrätt eller mellanmål.",
+        "description": "Saftig och luftig ugnspannkaka när den är som bäst. Enkelt recept på klassisk ugnspannkaka som toppas med vispad grädde och sylt. Den här pannkakan passar lika bra till middagen som till efterrätt eller mellanmål.",
         "ingredients": [
             {
                 "quantity": "2 dl",
@@ -26,458 +26,416 @@
             }
         ],
         "steps": [
-            "Skala och hacka löken och vitlök fint. Dela, kärna ur och skär paprikan i tärningar.",
-            "Skär kycklingen i bitar.",
-            "Stek kycklingen i olja i en stor panna tills den fått fin färg runtom. Ta upp och lägg åt sidan.",
-            "Lägg den hackade gula löken i pannan och stek tills den är mjuk och fått lite färg. Tillsätt vitlök och paprika, fortsätt steka 1-2 minuter.",
-            "Strö över paprikapulver och saffran, vänd runt. Tillsätt krossade tomater och blanda allting noga. Låt tomatsåsen puttra utan lock i ca 15 minuter. Lägg i kycklingen.",
-            "Skölj riset noga i ljummet vatten och låt rinna av. Vänd ner riset i tomatsåsen och blanda så att riset fördelas jämnt i såsen. Nu ska detta helst vara den sista gången du rör runt riset. Om du blandar riset för ofta kommer riskornen börja släppa ifrån sig massa stärkelse och istället för en paella kommer du att få en risotto.",
-            "Häll på kokhett vatten som du har blandat med fond eller buljong. Salta och peppra. Skaka pannan försiktigt tills allting blandas samman, undvik att röra runt riset. Låt paellan sjuda på medelvärme utan lock i ca 10 minuter. Skaka på pannan lite lätt efter halva tillagningstiden.",
-            "Tryck ner räkorna lite lätt på toppen av riset. Låt puttra i ytterligare 10 minuter. Du kan tillsätta mer vatten om det känns för torrt.",
-            "Strö över ärtorna, täck pannan med ett lock eller folie och låt allting tillagas någon minut. Smaka av och se så att riset är färdigt. Ta från värmen och låt vila ca 5 minuter före servering. Toppa med citronklyftor och servera."
+            "Sätt ugnen på 225°C.",
+            "Blanda mjölet med socker och salt i en bunke.",
+            "Tillsätt hälften av mjölken och vispa till en jämn, tjock smet. Rör ner äggen.",
+            "Vispa ner resterande mjölk och fortsätt vispa till en klumpfri smet (om tiden finns låt smeten svälla ca 10 minuter).",
+            "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
-        "html": "recept/paella.html",
         "time": "40 min",
-        "imageURL": "img/paella.jpg"
+        "imageURL": "img/ugnspannkaka.jpg"
     },
     {
         "id": 2,
-        "name": "Spaghetti Bolognese",
-        "category": "pasta",
-        "description": "En klassisk italiensk rätt med smakrik köttfärssås och al dente kokt spaghetti.",
+        "name": "Kyckling med rotfrukter",
+        "description": "Lättlagad kyckling i ugn med rotsakerna direkt i formen. En perfekt maträtt som nästan sköter sig själv. Servera med en het yoghurtsås",
         "ingredients": [
             {
-                "quantity": "250 g",
-                "name": "spaghetti",
-                "type": "Pasta"
+                "quantity": "",
+                "name": "KYCKLINGEN:"
             },
             {
-                "quantity": "300 g",
-                "name": "köttfärs",
-                "type": "Meat"
+                "quantity": "1/2 kg",
+                "name": "frysta eller färska kycklingklubbor"
             },
             {
-                "quantity": "1 burk",
-                "name": "krossade tomater",
-                "type": "Canned Goods"
+                "quantity": "1 1/4 msk",
+                "name": "japansk soja"
             },
             {
-                "quantity": "1",
-                "name": "gul lök",
-                "type": "Vegetables"
+                "quantity": "1/2 msk",
+                "name": "ketchup"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "rosmarin"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "oregano"
+            },
+            {
+                "quantity": "1/2 msk",
+                "name": "rapsolja"
+            },
+            {
+                "quantity": "1/4 tsk",
+                "name": "svartpeppar"
+            },            
+            {
+                "quantity": "1/2",
+                "name": "vitlöksklyfta"
+            },            
+            {
+                "quantity": "1 1/2 msk",
+                "name": "oregano"
+            },            
+            {
+                "quantity": "1/2 tsk",
+                "name": "smör"
+            },
+            {
+                "quantity": "",
+                "name": ". . . . . . . . . . . . . . . . . . . . . . . . . . ."
+            },
+            {
+                "quantity": "",
+                "name": "ROSTADE ROTFRUKTER:"
             },
             {
                 "quantity": "2",
-                "name": "vitlöksklyftor",
-                "type": "Vegetables"
+                "name": "rödbetor"
+            },
+            {
+                "quantity": "2",
+                "name": "stora morötter"
+            },
+            {
+                "quantity": "150 g",
+                "name": "kålrot"
+            },
+            {
+                "quantity": "2",
+                "name": "palsternackor"
+            },
+            {
+                "quantity": "2 msk",
+                "name": "rapsolja"
+            },
+            {
+                "quantity": "2 krm",
+                "name": "salt"
+            },
+            {
+                "quantity": "2 krm",
+                "name": "svartpeppar"
+            },
+            {
+                "quantity": "",
+                "name": ". . . . . . . . . . . . . . . . . . . . . . . . . . ."
+            },
+            {
+                "quantity": "",
+                "name": "HET YOGHURTSÅS:"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "matyoghurt (10%)"
+            },
+            {
+                "quantity": "1/4 dl",
+                "name": "sweet chilisås"
+            },
+            {
+                "quantity": "",
+                "name": "Rivet skal från 1/4 citron"
+            },            
+            {
+                "quantity": "1/2 tsk",
+                "name": "citronjuice"
+            },
+            {
+                "quantity": "1 krm",
+                "name": "salt"
+            },
+            {
+                "quantity": "1/4 krm",
+                "name": "svartpeppar"
             }
         ],
         "steps": [
-            "Koka spaghettin enligt anvisningarna på förpackningen.",
-            "Stek köttfärsen tills den är genomstekt. Tillsätt lök och vitlök.",
-            "Tillsätt de krossade tomaterna och låt sjuda i cirka 15-20 minuter.",
-            "Servera köttfärssåsen över den kokta spaghettin."
+            "Sätt ugnen på 225°C.",
+            "Blanda soja, ketchup, rosmarin och oregano med olja och peppar. Skala och pressa ner vitlöken.",
+            "Lägg kycklingklubborna i en ugnssäker form och pensla på blandningen. Klicka över smör. Häll vatten i bottnen av formen.",
+            "Stek kycklingklubborna i ugnen i ca 45 minuter (ca 30 minuter om de är färska), tills köttsaften är klar och innertemperaturen är 82˚C (intill benet). Ös kycklingen ett par gånger under tillagningen.",
+            "Häll i mer vatten om det skulle behövas. Spara gärna skyn. Häll ner den i en skål eller en burk och förvara i kylskåpet. Ta bort ev fett som ligger överst före användning.",
+            "Skala och skär rotfrukterna i 2-3 cm stora bitar. Lägg på en bakpappersklädd plåt eller i en liten ugnssäker form.",
+            "Ringla över olja och rydda med salt och peppar. Blanda runt.",
+            "Rosta rotfrukterna i ugnen ca 30 minuter, tills de är mjuka med lite tuggmotstånd.",
+            "Blanda yoghurt, sweet chilisås, citronskal och citronjuice. Smaka av med salt och peppar."
         ],
-        "timers": [
-            0,
-            0,
-            900,
-            0
-        ],
-        "html": "recept/spaghetti_bolognese.html",
-        "imageURL": "img/bolognese.jpg"
+        "imageURL": "img/yoghurtkyckling.jpg"
     },
     {
         "id": 3,
-        "name": "Chicken Stir-Fry",
-        "category": "chicken",
-        "description": "A quick and healthy chicken stir-fry with colorful vegetables and a savory sauce.",
+        "name": "Busenkel broccolisoppa",
+        "description": "En riktigt smarrig soppa av broccoli som dessutom är lätt som en plätt att laga till! Servera den varma broccolisoppan tillsammans med en brödbit och njut!",
         "ingredients": [
             {
-                "quantity": "2",
-                "name": "boneless chicken breasts",
-                "type": "Meat"
-            },
-            {
                 "quantity": "1",
-                "name": "red bell pepper",
-                "type": "Vegetables"
+                "name": "lök"
             },
             {
-                "quantity": "1",
-                "name": "yellow bell pepper",
-                "type": "Vegetables"
+                "quantity": "3",
+                "name": "potatisar"
             },
             {
-                "quantity": "1",
-                "name": "carrot",
-                "type": "Vegetables"
+                "quantity": "250 g",
+                "name": "broccoli"
             },
             {
-                "quantity": "2",
-                "name": "garlic cloves",
-                "type": "Vegetables"
+                "quantity": "9 dl",
+                "name": "grönsaksbuljong (vatten och grönsaksfond eller tärningar)"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "matlagningsgrädde"
+            },
+            {
+                "quantity": "",
+                "name": "Salt & peppar"
             }
         ],
         "steps": [
-            "Slice the chicken and vegetables into thin strips.",
-            "Stir-fry the chicken in a hot pan until cooked through. Remove and set aside.",
-            "Stir-fry the vegetables until they start to soften.",
-            "Return the chicken to the pan, add the sauce, and cook for a few minutes.",
-            "Serve the stir-fry over rice or noodles."
+            "Skala och skiva lök och potatis. Skär hela broccolin i bitar.",
+            "Koka upp buljongen och lägg i lök, potatis och broccoli. Koka upp och låt det koka i ca 10 minuter eller tills grönsakerna är mjuka. Mixa soppan med en stavmixer eller i en matberedare.",
+            "Häll tillbaka soppan i kastrullen, tillsätt matlagningsgrädde, koka upp och smaka av med salt och peppar.",
+            "TIPS: Servera soppan med bröd och om du vill lyxa till det servera det med kräftstjärtar."
         ],
-        "timers": [
-            0,
-            300,
-            300,
-            0,
-            0
-        ],
-        "html": "chicken_stir_fry.html",
-        "imageURL": "img/BlueberryOatmealBars.jpg"
+        "imageURL": "img/broccolisoppa.jpg"
     },
     {
         "id": 4,
-        "name": "Vegetable Curry",
-        "category": "vegetarian",
-        "description": "A flavorful and aromatic vegetable curry with a blend of spices and assorted vegetables.",
+        "name": "Dhal indisk linsgryta",
+        "description": "För dig som gillar indisk mat kommer den här dhalen bli en favorit. Linsgrytan är fylld med rika kryddor som koriander, ingefära, kummin och kanel och serveras med färskt naanbröd.",
         "ingredients": [
             {
-                "quantity": "2 cups",
-                "name": "mixed vegetables (e.g., potatoes, carrots, peas)",
-                "type": "Vegetables"
+                "quantity": "1/2",
+                "name": "lök"
             },
             {
                 "quantity": "1",
-                "name": "onion",
-                "type": "Vegetables"
+                "name": "morot"
             },
             {
-                "quantity": "2",
-                "name": "tomatoes",
-                "type": "Vegetables"
+                "quantity": "1",
+                "name": "vitlöksklyfta"
             },
             {
-                "quantity": "1 can",
-                "name": "coconut milk",
-                "type": "Canned Goods"
+                "quantity": "3/4 msk",
+                "name": "riven ingefära"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "curry powder",
-                "type": "Spices"
+                "quantity": "1 msk",
+                "name": "rapsolja"
+            },
+            {
+                "quantity": "3/4 tsk",
+                "name": "koriander"
+            },
+            {
+                "quantity": "1/4 tsk",
+                "name": "mald spiskummin"
+            },
+            {
+                "quantity": "1/2 krm",
+                "name": "malen kanel"
+            },
+            {
+                "quantity": "2 dl",
+                "name": "torra röda linser"
+            },
+            {
+                "quantity": "250 g",
+                "name": "krossade tomater"
+            },
+            {
+                "quantity": "200 ml",
+                "name": "kokosmjölk"
+            },
+            {
+                "quantity": "1/2 tärning",
+                "name": "grönsaksbuljong"
+            },
+            {
+                "quantity": "1 dl",
+                "name": "vatten"
+            },
+            {
+                "quantity": "",
+                "name": "Salt"
+            },
+            {
+                "quantity": "",
+                "name": "Lime"
             }
         ],
         "steps": [
-            "Chop the vegetables and onion.",
-            "Sauté the onion until translucent, then add the tomatoes and curry powder.",
-            "Add the mixed vegetables and coconut milk. Simmer until the vegetables are tender.",
-            "Serve the vegetable curry over rice or with naan."
+            "Skala lök, morötter och vitlök. Tärna lök och morötterna och finhacka vitlöken. Riv ingefäran fint på ett rivjärn.",
+            "Fräs lök, morötter och vitlök i oljan i några minuter. Rör ned ingefära, koriander, spiskummin och kanel. Häll i linserna och rör om ordentligt, tillsätt sedan krossade tomater, kokosmjölk, grönsaksbuljong och vatten. Låt det koka sakta under lock i 25 - 30 minuter, rör om då och då. Smaka av med salt och limejuice",
+            "TIPS: Toppa grytan med färsk koriander och servera med ris och naanbröd."
         ],
-        "timers": [
-            0,
-            300,
-            600,
-            0
-        ],
-        "html": "vegetable_curry.html",
-        "imageURL": "img/linssoppa.jpg"
+        "imageURL": "img/dhal.jpg"
     },
     {
         "id": 5,
-        "name": "Salmon with Lemon-Dill Sauce",
-        "category": "seafood",
-        "description": "Pan-seared salmon fillet served with a creamy lemon-dill sauce.",
+        "name": "Chili con carne",
+        "description": "Chili con carne är en mustig och het gryta med köttfärs, chili, vita bönor, paprika och tomater. Detta klassiska mexikanska recept är både lättlagat och uppskattat av dina middagsgäster.",
         "ingredients": [
             {
-                "quantity": "2",
-                "name": "salmon fillets",
-                "type": "Seafood"
-            },
-            {
                 "quantity": "1",
-                "name": "lemon",
-                "type": "Fruits"
+                "name": "gul lök"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "fresh dill",
-                "type": "Herbs"
+                "quantity": "175 g",
+                "name": "nötfärs"
             },
             {
-                "quantity": "1/4 cup",
-                "name": "heavy cream",
-                "type": "Dairy"
+                "quantity": "1/2 msk",
+                "name": "olja"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "butter",
-                "type": "Dairy"
+                "quantity": "",
+                "name": "Färsk eller torkad chili efter smak"
+            },
+            {
+                "quantity": "1/2 tsk",
+                "name": "paprikapulver"
+            },
+            {
+                "quantity": "1/2 krm",
+                "name": "svartpeppar"
+            },
+            {
+                "quantity": "2/5 tsk",
+                "name": "salt"
+            },
+            {
+                "quantity": "1/2 msk",
+                "name": "japansk soja"
+            },
+            {
+                "quantity": "1/2 burk",
+                "name": "hela tomater (400g)"
+            },
+            {
+                "quantity": "1 burk",
+                "name": "vita bönor i tomatsås (440g)"
             }
         ],
         "steps": [
-            "Season the salmon fillets with salt and pepper.",
-            "Sear the fillets in butter until cooked to your liking.",
-            "In a separate saucepan, heat the cream, lemon juice, and dill. Simmer until slightly thickened.",
-            "Serve the salmon with the lemon-dill sauce drizzled on top."
+            "Skala och hacka lökarna. Bryn färsen i oljan i en gryta, gärna av gjutjärn, tills den fått fin färg. Blanda ner löken och låt den steka med en stund. Smaka av med chili, paprika, svartpeppar, salt och soja.",
+            "Tillsätt tomaterna och låt alltsammans koka ihop tills smaken är mustig och röran blivit tjock. Ju längre koktid, desto fylligare smak.",
+            "Tillsätt bönorna och låt alltsammans bli varmt. Smaka av med mer kryddor om så behövs.",
+            "TIPS: Servera rätten med tortillachips"
         ],
-        "timers": [
-            0,
-            360,
-            600,
-            0
-        ],
-        "html": "salmon_lemon_dill.html",
-        "imageURL": "img/lax.jpg"
+        "imageURL": "img/chilicon.jpg"
     },
     {
         "id": 6,
-        "name": "Margherita Pizza",
-        "category": "pizza",
-        "description": "A classic Margherita pizza topped with fresh tomatoes, mozzarella, and basil leaves.",
+        "name": "Rostad Rotfruktssoppa",
+        "description": "När grönsakerna rostas i ugnen kommer smakerna fram. Toppa soppan med knapriga frön och riven ost precis innan servering.",
         "ingredients": [
             {
+                "quantity": "400 g",
+                "name": "blandade skalade rotfrukter."
+            },
+            {
                 "quantity": "1",
-                "name": "pizza dough",
-                "type": "Baking"
+                "name": "liten gul lök"
             },
             {
-                "quantity": "2",
-                "name": "tomatoes",
-                "type": "Vegetables"
+                "quantity": "1",
+                "name": "vitlöksklyfta"
             },
             {
-                "quantity": "8 ounces",
-                "name": "mozzarella cheese",
-                "type": "Dairy"
+                "quantity": "1 msk",
+                "name": "olivolja"
             },
             {
-                "quantity": "1/4 cup",
-                "name": "fresh basil leaves",
-                "type": "Herbs"
+                "quantity": "1 tsk",
+                "name": "torkad timjan"
             },
             {
-                "quantity": "2 tablespoons",
-                "name": "olive oil",
-                "type": "Condiments"
+                "quantity": "1 tärning",
+                "name": "grönsaksbuljong"
+            },
+            {
+                "quantity": "4 dl",
+                "name": "vatten"
+            },
+            {
+                "quantity": "1/2 dl",
+                "name": "vispgrädde"
+            },
+            {
+                "quantity": "1/2 msk",
+                "name": "äppelcidervinäger"
+            },
+            {
+                "quantity": "",
+                "name": "salt"
+            },
+            {
+                "quantity": "",
+                "name": "svartpeppar"
             }
         ],
         "steps": [
-            "Roll out the pizza dough to your desired thickness.",
-            "Brush the dough with olive oil and top with sliced tomatoes, mozzarella, and basil leaves.",
-            "Bake the pizza in a preheated oven until the crust is golden and the cheese is melted.",
-            "Slice and serve the Margherita pizza."
+            "Sätt ugnen på 200°C",
+            "Skala och skär löken i stora klyftor. Skala vitlöksklyftorna. Blanda rotfrukter, lök, vitlök, olja och timjan i en ugnsform. Rosta i mitten av ugnen ca 30 minuter eller tills rotfrukterna är mjuka.",
+            "Koka upp buljongtärningarna med vattnet. Tillsätt de rostade rotfrukterna och mixa soppan slät med en stavmixer. Tillsätt grädde och vinäger och låt koka upp. Smaka av med salt och peppar."
         ],
-        "timers": [
-            0,
-            0,
-            900,
-            0
-        ],
-        "html": "margherita_pizza.html",
-        "imageURL": "img/pizza.jpg"
+        "imageURL": "img/rotfruktssoppa.jpg"
     },
     {
         "id": 7,
-        "name": "Berry Smoothie",
-        "category": "beverage",
-        "description": "A refreshing and nutritious smoothie made with mixed berries and yogurt.",
+        "name": "Skinkpasta med sockerärtor",
+        "description": "Har du ont om tid? Då är det här receptet på skinkpasta med sockerärtor perfekt. Såsen slänger du ihop snabbt och blandar sedan ner skinkan. Koka pastan. Sen kokar du sockerärtorna i samma vatten. Minimalt med disk!",
         "ingredients": [
             {
-                "quantity": "1 cup",
-                "name": "mixed berries (e.g., strawberries, blueberries, raspberries)",
-                "type": "Fruits"
+                "quantity": "1 1/4 dl",
+                "name": "mjölk"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "plain yogurt",
-                "type": "Dairy"
+                "quantity": "1 tsk",
+                "name": "majsstärkelse"
             },
             {
-                "quantity": "1/2 cup",
-                "name": "milk",
-                "type": "Drinks"
+                "quantity": "1 dl",
+                "name": "crème fraiche parmesan/vitlök"
             },
             {
-                "quantity": "1 tablespoon",
-                "name": "honey",
-                "type": "Condiments"
+                "quantity": "1/4 tärning",
+                "name": "kycklingbuljong"
             },
             {
-                "quantity": "1/2 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
+                "quantity": "",
+                "name": "Salt"
+            },
+            {
+                "quantity": "",
+                "name": "Peppar"
+            },
+            {
+                "quantity": "2 portioner",
+                "name": "valfri pasta"
+            },
+            {
+                "quantity": "180 g",
+                "name": "strimlad skinka"
+            },
+            {
+                "quantity": "100 g",
+                "name": "sockerärtor"
             }
         ],
         "steps": [
-            "Combine the mixed berries, yogurt, milk, honey, and vanilla extract in a blender.",
-            "Blend until smooth and creamy.",
-            "Pour the berry smoothie into glasses and serve immediately."
+            "Sätt på en kastrull med vatten till pastan.",
+            "Blanda mjölken med majsstärkelsen. Koka upp mjölk och crème fraiche tillsammans med smulad buljongtärning. Rör i skinkan och låt det bli varmt. Smaka av med salt och peppar.",
+            "Koka pastan enligt anvisningen på förpackningen koka sockerärtorna tillsammans med pastan de sista 4 minuterna på pastans koktid.",
+            "Blanda pastan och sockerärtorna med såsen och servera."
         ],
-        "timers": [
-            0,
-            0,
-            0
-        ],
-        "html": "berry_smoothie.html",
-        "imageURL": "img/sparris.jpg"
-    },
-    {
-        "id": 8,
-        "name": "Homemade Burgers",
-        "category": "burgers",
-        "description": "Juicy homemade burgers with all your favorite toppings.",
-        "ingredients": [
-            {
-                "quantity": "1 pound",
-                "name": "ground beef",
-                "type": "Meat"
-            },
-            {
-                "quantity": "4",
-                "name": "hamburger buns",
-                "type": "Bakery"
-            },
-            {
-                "quantity": "4 slices",
-                "name": "cheddar cheese",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "1",
-                "name": "onion",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "4 leaves",
-                "name": "lettuce",
-                "type": "Vegetables"
-            }
-        ],
-        "steps": [
-            "Divide the ground beef into 4 equal portions and shape into patties.",
-            "Grill or cook the patties on a stovetop until cooked to your preferred doneness.",
-            "Toast the hamburger buns and assemble the burgers with cheese, onion, and lettuce.",
-            "Serve the homemade burgers with your favorite condiments and sides."
-        ],
-        "timers": [
-            0,
-            600,
-            0,
-            0
-        ],
-        "html": "homemade_burgers.html",
-        "imageURL": "img/caesarsalad.jpg"
-    },
-    {
-        "id": 9,
-        "name": "Pasta Primavera",
-        "category": "pasta",
-        "description": "A light and vibrant pasta dish with assorted spring vegetables and a lemony sauce.",
-        "ingredients": [
-            {
-                "quantity": "8 ounces",
-                "name": "pasta (e.g., spaghetti, fettuccine)",
-                "type": "Pasta"
-            },
-            {
-                "quantity": "1",
-                "name": "zucchini",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1",
-                "name": "yellow squash",
-                "type": "Vegetables"
-            },
-            {
-                "quantity": "1 cup",
-                "name": "cherry tomatoes",
-                "type": "Fruits"
-            },
-            {
-                "quantity": "1/4 cup",
-                "name": "fresh parsley",
-                "type": "Herbs"
-            }
-        ],
-        "steps": [
-            "Cook the pasta according to package instructions.",
-            "Sauté the zucchini, yellow squash, and cherry tomatoes until tender.",
-            "Toss the cooked pasta with the sautéed vegetables and fresh parsley.",
-            "Drizzle with olive oil and lemon juice. Season with salt and pepper."
-        ],
-        "timers": [
-            0,
-            300,
-            0,
-            0
-        ],
-        "html": "pasta_primavera.html",
-        "imageURL": "img/PastaPrimavera.jpg"
-    },
-    {
-        "id": 10,
-        "name": "Chocolate Chip Cookies",
-        "category": "dessert",
-        "description": "Classic homemade chocolate chip cookies that are chewy and delicious.",
-        "ingredients": [
-            {
-                "quantity": "1 cup",
-                "name": "butter",
-                "type": "Dairy"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "granulated sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "3/4 cup",
-                "name": "brown sugar",
-                "type": "Baking"
-            },
-            {
-                "quantity": "1 teaspoon",
-                "name": "vanilla extract",
-                "type": "Baking"
-            },
-            {
-                "quantity": "2",
-                "name": "eggs",
-                "type": "Dairy"
-            }
-        ],
-        "steps": [
-            "Preheat the oven to 375°F (190°C).",
-            "In a large bowl, cream together the butter, granulated sugar, and brown sugar.",
-            "Beat in the vanilla and eggs.",
-            "Combine the dry ingredients in a separate bowl, then gradually add to the butter mixture.",
-            "Stir in the chocolate chips.",
-            "Drop spoonfuls of dough onto ungreased baking sheets and bake for 8-10 minutes.",
-            "Let the cookies cool on the baking sheets before transferring to a wire rack."
-        ],
-        "timers": [
-            0,
-            0,
-            0,
-            0,
-            0,
-            600,
-            0
-        ],
-        "html": "chocolate_chip_cookies.html",
-        "imageURL": "img/havre.jpg"
+        "imageURL": "img/skinkpasta.jpg"
     }
-    
-
-    
-
-    
-    
-
-    
-    
-    
-    
 ]

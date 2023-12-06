@@ -854,7 +854,6 @@ img {
 .recept-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 420px;
   margin: auto;
 }
@@ -868,10 +867,17 @@ img {
     max-width: 1500px;
   }
 }
-.recept-cards:after {
-  content: "";
-  flex: 1 1 100%;
-  max-width: 49%;
+@media (min-width: 700px) {
+  .recept-cards .card {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+}
+@media (min-width: 1300px) {
+  .recept-cards .card {
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+  }
 }
 
 .individuellaContainer {
@@ -1012,6 +1018,8 @@ img {
 }
 .card .imageContainer {
   height: 200px;
+  border: solid black 2px;
+  box-shadow: black 3px 3px;
 }
 .card .imageContainer img {
   height: 100%;
