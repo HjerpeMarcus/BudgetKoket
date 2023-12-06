@@ -49,14 +49,24 @@ h2 {
 .cookie-popup .popup-content p {
   margin: 20px 0;
 }
-.cookie-popup .popup-content #only-necessary-button {
+.cookie-popup .popup-content .kakPopup {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.cookie-popup .popup-content .kakPopup #only-necessary-button {
   border: none;
+  background-color: grey;
+  padding: 0.5rem;
+  border: 1px solid black;
 }
-.cookie-popup .popup-content #ok-button {
+.cookie-popup .popup-content .kakPopup #ok-button {
   background-color: #fac000;
+  padding: 0.5rem;
+  width: 100px;
 }
-.cookie-popup .popup-content #ok-button:hover {
-  background-color: #e0ab00;
+.cookie-popup .popup-content .kakPopup #ok-button:hover {
+  background-color: #bd9a26;
 }
 .cookie-popup .popup-content .b {
   text-align: center;
@@ -131,6 +141,87 @@ h2 {
   height: 0;
 }
 
+@media (min-width: 500px) {
+  .popular-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: 1400px;
+  }
+}
+
+.card {
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  border: solid 2px black;
+  box-shadow: black 3px 3px;
+  background-color: white;
+}
+@media (min-width: 500px) {
+  .card {
+    flex: 0 0 calc(50% - 0.5rem);
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 700px) {
+  .card {
+    flex: 0 0 calc(33.3333333333% - 0.6666666667rem);
+  }
+}
+@media (min-width: 1300px) {
+  .card {
+    flex: 0 0 calc(25% - 0.75rem);
+  }
+}
+.card .imageContainer {
+  height: 200px;
+}
+.card .imageContainer img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .cardHeader {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.card .cardDesc {
+  margin-bottom: 1rem;
+}
+.card .cardLink {
+  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
+  background-color: #e95e3f;
+  border: solid 2px black;
+  box-shadow: black 2px 2px;
+  border-radius: 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: black;
+  text-decoration: none;
+}
+.card .cardLink .linkText {
+  margin-right: 0.5rem;
+  font-weight: 600;
+  color: white;
+}
+.card .cardLink .linkIcon {
+  color: white;
+}
+.card.hide {
+  display: none;
+}
+.card:last-child {
+  margin-bottom: 0;
+}
+
 .omOssBody {
   min-height: 100vh;
   display: flex;
@@ -160,17 +251,10 @@ img {
   height: auto;
 }
 
-.cardContainer {
-  margin: auto;
-}
-@media (min-width: 700px) {
-  .cardContainer {
-    max-width: 900px;
-  }
-}
 @media (min-width: 1300px) {
   .cardContainer {
     max-width: 1400px;
+    margin: auto;
   }
 }
 
@@ -297,19 +381,6 @@ img {
 }
 .chip[type=checkbox]:checked + label {
   background-color: rgb(208, 64, 64);
-}
-
-.popular-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 400px;
-  margin: auto;
-}
-@media (min-width: 700px) {
-  .popular-cards {
-    max-width: none;
-  }
 }
 
 .main-header {
@@ -539,12 +610,16 @@ img {
   font-size: 1.5rem;
   margin-top: 1rem;
   color: #ff5b03;
+  text-decoration: none;
 }
 @media (min-width: 700px) {
   #main-footer .footer-inside ul li a {
     display: inline-block;
     margin: 0 0 0 3rem;
   }
+}
+#main-footer .footer-inside ul li.cookietagg .cookie-settings-button {
+  text-decoration: none;
 }
 
 .tips {
@@ -851,35 +926,6 @@ img {
   width: 100%;
 }
 
-.recept-cards {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 420px;
-  margin: auto;
-}
-@media (min-width: 700px) {
-  .recept-cards {
-    max-width: 920px;
-  }
-}
-@media (min-width: 1300px) {
-  .recept-cards {
-    max-width: 1500px;
-  }
-}
-@media (min-width: 700px) {
-  .recept-cards .card {
-    margin-right: 1%;
-    margin-left: 1%;
-  }
-}
-@media (min-width: 1300px) {
-  .recept-cards .card {
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-  }
-}
-
 .individuellaContainer {
   margin-bottom: 2rem;
   max-width: 1350px;
@@ -989,75 +1035,4 @@ img {
 }
 .teamContainer .teamPic figure figcaption {
   margin: 0.5rem 1rem;
-}
-
-.card {
-  position: relative;
-  height: 540px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex: 0 0 98%;
-  margin-bottom: 2rem;
-  border-radius: 1.5rem;
-  padding: 1.5rem;
-  border: solid 2px black;
-  box-shadow: black 3px 3px;
-  overflow: hidden;
-  background-color: white;
-}
-@media (min-width: 700px) {
-  .card {
-    flex: 0 0 48%;
-  }
-}
-@media (min-width: 1300px) {
-  .card {
-    flex: 0 0 24%;
-  }
-}
-.card .imageContainer {
-  height: 200px;
-  border: solid black 2px;
-  box-shadow: black 3px 3px;
-}
-.card .imageContainer img {
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card .cardHeader {
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0.5rem 0 0.5rem 0;
-}
-.card .cardDesc {
-  margin-bottom: 1rem;
-}
-.card .cardLink {
-  padding: 0.5rem 0.6rem 0.5rem 0.6rem;
-  background-color: #e95e3f;
-  border: solid 2px black;
-  box-shadow: black 2px 2px;
-  border-radius: 0.8rem;
-  display: inline-flex;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: black;
-  text-decoration: none;
-}
-.card .cardLink .linkText {
-  margin-right: 0.5rem;
-  font-weight: 600;
-  color: white;
-}
-.card .cardLink .linkIcon {
-  color: white;
-}
-.card.hide {
-  display: none;
-}
-.card:last-child {
-  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */

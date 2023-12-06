@@ -29,16 +29,28 @@
     p {
       margin: 20px 0;
     }
-    #only-necessary-button {
-      border: none;
-    }
-    #ok-button {
-      background-color: #fac000;
+    .kakPopup {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1rem;
 
-      &:hover {
-        background-color: #e0ab00;
+      #only-necessary-button {
+        border: none;
+        background-color: grey;
+        padding: 0.5rem;
+        border: 1px solid black;
+      }
+      #ok-button {
+        background-color: #fac000;
+        padding: 0.5rem;
+        width: 100px;
+
+        &:hover {
+          background-color: #bd9a26;
+        }
       }
     }
+
     .b {
       text-align: center;
     }
