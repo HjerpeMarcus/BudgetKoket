@@ -4,13 +4,12 @@ function getRecipeIdFromUrl() {
 }
 function generate() {
     let chosenRecipe = getRecipeIdFromUrl();
-    chosenRecipe = Number(chosenRecipe);
-    console.log(typeof chosenRecipe);
+    console.log(chosenRecipe);
     fetch('../json/recept.json')
         .then(response => response.json())
         .then(data => {
             data.forEach(item => {
-                if (item.id === chosenRecipe) {
+                if (item.id === Number(chosenRecipe)) {
                     document.getElementById('rubrik').innerHTML = item.name;
                     document.getElementById('recipeName').innerHTML = item.name;
                     document.getElementById('recipeDesc').innerHTML = item.description;

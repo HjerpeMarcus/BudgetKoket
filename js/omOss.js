@@ -136,8 +136,10 @@ closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
 });
 //kort-länkar
-document.body.addEventListener( 'click', function ( event ) {
-    if(event.target.classList.contains('linkListener')){
-            sessionStorage.setItem("chosenRecipe", event.target.closest(".card").id)
-    };
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains('linkListener')) {
+        event.preventDefault(); 
+        const recipeId = event.target.closest(".card").id;
+        window.location.href = `individuellaRecept.html?recipe=${recipeId}`;
+    }
   } );

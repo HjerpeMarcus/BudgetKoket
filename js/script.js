@@ -139,10 +139,10 @@ closeButtonRef.addEventListener("click", function(){
     navRef.classList.remove('visible')
 });
 //kort-länkar
-document.body.addEventListener( 'click', function ( event ) {
-    event.preventDefault();
-    if(event.target.classList.contains('linkListener')){
-        const recipeID = event.target.closest(".card").id;
-        window.location.href = `individuellaRecept.html?recipe=${recipeID}`;
-    };
+document.body.addEventListener('click', function(event) {
+    if (event.target.classList.contains('linkListener')) {
+        event.preventDefault(); 
+        const recipeId = event.target.closest(".card").id;
+        window.location.href = `individuellaRecept.html?recipe=${recipeId}`;
+    }
   } );
