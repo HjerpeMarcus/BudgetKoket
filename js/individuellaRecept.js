@@ -10,6 +10,7 @@ function generate() {
         .then(data => {
             data.forEach(item => {
                 if (item.id === Number(chosenRecipe)) {
+                    document.title = item.name;
                     document.getElementById('rubrik').innerHTML = item.name;
                     document.getElementById('recipeName').innerHTML = item.name;
                     document.getElementById('recipeDesc').innerHTML = item.description;
