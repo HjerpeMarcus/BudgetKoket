@@ -33,7 +33,8 @@
             "Grädda i mitten av ugnen 30-40 minuter, lägg ev. på en bit folie mot slutet om ytan får för mycket färg. Låt vila i 5 minuter innan servering"
         ],
         "time": "40 min",
-        "imageURL": "img/ugnspannkaka.jpg"
+        "imageURL": "img/ugnspannkaka.webp",
+        "imagealt": "Bild på en uppskuren ugnspannkaka med sylt."
     },
     {
         "id": 2,
@@ -164,7 +165,8 @@
             "Rosta rotfrukterna i ugnen ca 30 minuter, tills de är mjuka med lite tuggmotstånd.",
             "Blanda yoghurt, sweet chilisås, citronskal och citronjuice. Smaka av med salt och peppar."
         ],
-        "imageURL": "img/yoghurtkyckling.jpg"
+        "imageURL": "img/yoghurtkyckling.webp",
+        "imagealt": "Bild på en tallrik med kyckling ovanifrån med en tjock sås ringlad över."
     },
     {
         "id": 3,
@@ -202,7 +204,8 @@
             "Häll tillbaka soppan i kastrullen, tillsätt matlagningsgrädde, koka upp och smaka av med salt och peppar.",
             "TIPS: Servera soppan med bröd och om du vill lyxa till det servera det med kräftstjärtar."
         ],
-        "imageURL": "img/broccolisoppa.jpg"
+        "imageURL": "img/broccolisoppa.webp",
+        "imagealt": "En skål med soppa ovanifrån med broccoli och räkor."
     },
     {
         "id": 4,
@@ -275,7 +278,8 @@
             "Fräs lök, morötter och vitlök i oljan i några minuter. Rör ned ingefära, koriander, spiskummin och kanel. Häll i linserna och rör om ordentligt, tillsätt sedan krossade tomater, kokosmjölk, grönsaksbuljong och vatten. Låt det koka sakta under lock i 25 - 30 minuter, rör om då och då. Smaka av med salt och limejuice",
             "TIPS: Toppa grytan med färsk koriander och servera med ris och naanbröd."
         ],
-        "imageURL": "img/dhal.jpg"
+        "imageURL": "img/dhal.webp",
+        "imagealt": "En skål med gryta ovanifrån med gröddor och bröd."
     },
     {
         "id": 5,
@@ -329,7 +333,8 @@
             "Tillsätt bönorna och låt alltsammans bli varmt. Smaka av med mer kryddor om så behövs.",
             "TIPS: Servera rätten med tortillachips"
         ],
-        "imageURL": "img/chilicon.jpg"
+        "imageURL": "img/chilicon.webp",
+        "imagealt": "En skål med con carne tagen ovanifrån med tortillachips."
     },
     {
         "id": 6,
@@ -386,7 +391,8 @@
             "Skala och skär löken i stora klyftor. Skala vitlöksklyftorna. Blanda rotfrukter, lök, vitlök, olja och timjan i en ugnsform. Rosta i mitten av ugnen ca 30 minuter eller tills rotfrukterna är mjuka.",
             "Koka upp buljongtärningarna med vattnet. Tillsätt de rostade rotfrukterna och mixa soppan slät med en stavmixer. Tillsätt grädde och vinäger och låt koka upp. Smaka av med salt och peppar."
         ],
-        "imageURL": "img/rotfruktssoppa.jpg"
+        "imageURL": "img/rotfruktssoppa.webp",
+        "imagealt": "En skål med soppa med olja ringlad över."
     },
     {
         "id": 7,
@@ -436,6 +442,7 @@
             "Koka pastan enligt anvisningen på förpackningen koka sockerärtorna tillsammans med pastan de sista 4 minuterna på pastans koktid.",
             "Blanda pastan och sockerärtorna med såsen och servera."
         ],
-        "imageURL": "img/skinkpasta.jpg"
+        "imageURL": "img/skinkpasta.webp",
+        "imagealt": "En tallrik med skinkpasta tagen ovanifrån."
     }
 ]

@@ -14,7 +14,7 @@ function generate() {
                     document.getElementById('rubrik').innerHTML = item.name;
                     document.getElementById('recipeName').innerHTML = item.name;
                     document.getElementById('recipeDesc').innerHTML = item.description;
-                    document.getElementById('imageContainer').innerHTML = `<img class="recipeImage" src="${item.imageURL}"></img>`;
+                    document.getElementById('imageContainer').innerHTML = `<img class="recipeImage" src="${item.imageURL}" alt="${item.imagealt}"></img>`;
                     item.ingredients.forEach(ingrident => {
                     let li = document.createElement('li');
                     console.log(ingrident);

@@ -284,19 +284,36 @@ img {
   height: 100vh;
   width: 100vw;
   max-width: 100%;
-  background-image: url(/img/hero_mobile.jpg);
+  background-image: url(/img/hero_mobile.webp);
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: solid black 10px;
   @media (min-width: $breakpoint-ipad) {
-    background-image: url(/img/hero.jpg);
+    background-image: url(/img/hero.webp);
     padding: 5vw;
+  }
+  .heroTextContainer{
+    height:5rem;
+    margin-top:2rem;
   }
   .text {
     padding-top: 8rem;
     padding-left: 2rem;
+    .heroText{
+      overflow: hidden;
+      max-width:2px;
+      max-height:0;
+      transition: max-height 2s ease-in-out, max-width 2s ease-in-out;
+      transition-delay: 0s, 1s;
+      &.expandHeight {
+          max-height: 20rem; 
+          transition-delay: 0s, 0s;
+      }
+      &.expandWidth {
+          max-width: 50rem; 
+      }
+    }
     p {
-      margin-top: 1rem;
       padding: 0 0.5rem 0 0.5rem;
       font-size: 4rem;
       font-family: "Bungee Inline", sans-serif;
@@ -306,7 +323,7 @@ img {
       line-height: 5rem;
       vertical-align: center;
       background-color: #f6f634;
-      overflow: hidden;
+      white-space: nowrap;
       @media (min-width: $breakpoint-ipad) {
         padding: 0.4rem 2rem 0.3rem 0.5rem;
         font-size: 4rem;

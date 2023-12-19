@@ -41,6 +41,7 @@ function getCard (){
         header.textContent = recipe.name;
         desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
+        img.setAttribute('alt', recipe.imagealt);
         dataUserCards.append(card);
         return{name: recipe.name,category: recipe.category, element:card}
     });
@@ -66,6 +67,7 @@ fetch(jsonUrl)
                 card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
+                img.setAttribute('alt', recipe.imagealt);
                 desc.textContent = recipe.description;
                 section.append(card);
                 return{name: recipe.name,category: recipe.category, element:card}
@@ -146,3 +148,29 @@ document.body.addEventListener('click', function(event) {
         window.location.href = `individuellaRecept.html?recipe=${recipeId}`;
     }
   } );
+  //hero-animation
+  const textBox1 = document.querySelector('.textBox1');
+  const textBox2 = document.querySelector('.textBox2');
+  const textBox3 = document.querySelector('.textBox3');
+  function animateHero(){
+    console.log('animator');
+    wait(200).then(() =>
+    textBox1.classList.add("expandHeight")
+            );
+    wait(1000).then(() =>
+    textBox1.classList.add("expandWidth")
+            );
+    wait(500).then(() =>
+    textBox2.classList.add("expandHeight")
+            );
+    wait(1300).then(() =>
+    textBox2.classList.add("expandWidth")
+            );
+    wait(800).then(() =>
+    textBox3.classList.add("expandHeight")
+            );
+    wait(1600).then(() =>
+    textBox3.classList.add("expandWidth")
+            );
+  }
+  window.onload = animateHero();

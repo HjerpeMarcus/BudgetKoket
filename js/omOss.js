@@ -43,6 +43,7 @@ function getCard (){
         header.textContent = recipe.name;
         desc.textContent = recipe.description;
         img.setAttribute('src', recipe.imageURL);
+        img.setAttribute('alt', recipe.imagealt);
         dataUserCards.append(card);
         return{name: recipe.name,category: recipe.category, element:card}
     });
@@ -67,6 +68,7 @@ fetch(jsonUrl)
                 card.id = recipe.id;
                 header.textContent = recipe.name;
                 img.setAttribute('src', recipe.imageURL);
+                img.setAttribute('alt', recipe.imagealt);
                 desc.textContent = recipe.description;
                 section.append(card);
                 return{name: recipe.name,category: recipe.category, element:card}
